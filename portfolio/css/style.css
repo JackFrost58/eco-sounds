@@ -24,7 +24,13 @@ html {
     scroll-behavior: smooth;
 }
 
-.container {
+header{    
+    background: url('../assets/img/header-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center 0;
+}
+
+.header-container {
     display: flex;
     justify-content: space-between;
     max-width: 1440px;
@@ -35,59 +41,43 @@ html {
     font-size: 20px;
 }
 
-header{    
-    background: url('../assets/img/header-bg.jpg');
-    background-repeat: no-repeat;
-    background-position: center 0;
-}
-
-.hero{
-    background-image: url('../assets/img/header-bg.jpg');
-    background-position: center -90px;
-    background-repeat: no-repeat;
-}
-
-h1 {
-    font-family: Merriweather, serif;
-}
-
-.container__navbar {
+.header-container__navbar {
     display: flex;
 }
 
-.container__menu{
+.header-container__menu{
     display: flex;
     flex-direction: row;
     width: 470px;
     margin: 32px 0;
 }
 
-.container__menu li {
+.header-container__menu li {
     padding-right: 30px;
     list-style-type: none;
 }
 
-.container__logo {
+.header-container__logo {
     margin: 20px;
 }
 
-.container__link {
+.header-container__link {
     text-decoration: none;
     color: white;
 }
 
-.container__link:hover {
+.header-container__link:hover {
     color: #BDAE82;
 }
 
-.container-switch{
+.header-container-switch{
     width: 70px;
     height: 50px;
     margin: 33px 20px 7px 0;
     color: white;
 }
 
-.container-switch__button {
+.header-container-switch__button {
     font-family: Inter, sans-serif;
     font-weight: 700;
     font-size: 20px;
@@ -96,10 +86,60 @@ h1 {
     border: none;
 }
 
-.container-switch__button:hover {
+.header-container-switch__button:hover {
     color: #BDAE82;
 }
 
-.container-switch__button_checked {
+.header-container-switch__button_checked {
+    color: #BDAE82;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 20px;
+    font-family: Inter, sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.hero-container{
+    background-image: url('../assets/img/header-bg.jpg');
+    background-position: center -90px;
+    background-repeat: no-repeat;
+}
+
+.hero-container__name{
+    font-family: Merriweather, serif;
+    font-size: 60px;
+    line-height: 120px;
+    color: white;
+}
+
+.hero-container__introduce {
+    display: flex;
+    flex-direction: column;
+    padding: 160px 860px 330px 80px;
+}
+
+.hero-container__text {
+    padding-top: 8px;
+    margin-bottom: 20px;
+    line-height: 42px;
+    color: white;
+}
+
+.hero-container__button {
+    width: 220px;
+    height: 55px;
+    font-family: Inter, sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    background: #BDAE82;
+    border: none;
+}
+
+.hero-container__button:hover {
+    background: white;
     color: #BDAE82;
 }
