@@ -84,6 +84,7 @@ header{
     background: none;
     color: white;
     border: none;
+    cursor: pointer;
 }
 
 .header-container-switch__button:hover {
@@ -97,7 +98,6 @@ header{
 .container {
     max-width: 1440px;
     margin: 0 auto;
-    padding: 0 20px;
     font-family: Inter, sans-serif;
     font-weight: 400;
     font-size: 20px;
@@ -109,7 +109,7 @@ header{
     background-repeat: no-repeat;
 }
 
-.hero-container__name{
+.hero-container__name {
     font-family: Merriweather, serif;
     font-size: 60px;
     line-height: 120px;
@@ -137,9 +137,32 @@ header{
     font-size: 20px;
     background: #BDAE82;
     border: none;
+    cursor: pointer;
 }
 
 .hero-container__button:hover {
     background: white;
     color: #BDAE82;
+}
+
+.skills-container {
+    padding-top: 117px;
+    background-color: black;
+}
+
+.container-title{
+    width: 49%;
+    height: 67px;
+    text-align: center;
+    margin: 0 370px;
+    background-image: linear-gradient(to top, #000 39px, #bdae82 39px, #bdae82 41px, #000 41px);
+    color: #BDAE82;
+}
+
+.container-title__name {
+    display: inline-block;
+    padding: 0 20px;
+    font-family: Merriweather, serif;
+    font-size: 40px;
+    background-color: black;
 }
