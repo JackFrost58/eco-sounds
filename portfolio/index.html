@@ -11,43 +11,62 @@
 <body>
     <header>
         <div class="container">
-            <img src="./assets/svg/logo.svg" alt="logo">
-            <nav>
-                <ul>
-                    <li>Skills</li>
-                    <li>Portfolio</li>
-                    <li>Video</li>
-                    <li>Price</li>
-                    <li>Contacts</li>
-                </ul>
-            </nav>
-            <div>
-                <input type="radio">
-                <input type="radio">
+            <img src="./assets/svg/logo.svg" class="container__logo" alt="logo">
+            <div class="container__navbar">
+                <nav>
+                    <ul class="container__menu">
+                        <li>
+                            <a class="container__link" href="#skills">Skills</a> 
+                        </li>
+                        <li>
+                            <a class="container__link" href="#portfolio">Portfolio</a> 
+                        </li>
+                        <li>
+                            <a class="container__link" href="#video">Video</a> 
+                        </li>
+                        <li>
+                            <a class="container__link" href="#price">Price</a>
+                        </li>
+                        <li>
+                            <a class="container__link" href="#contacts">Contacts</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="container-switch">
+                    <button class="container-switch__button container-switch__button_checked">en </button>
+                    <span>/</span>  
+                    <button class="container-switch__button"> ru </button>
+                </div>
             </div>
         </div>
     </header>
     <main>
-        <section class="hero">
-            <h1></h1>
-        </section>
-        <section class="skills">
-            <h2></h2>
-        </section>
-        <section class="portfolio">
-            <h2></h2>
-        </section>
-        <section class="video">
-            <h2></h2>
-        </section>
-        <section class="price">
-            <h2></h2>
-        </section>
-        <section class="contacts">
-            <h2></h2>
-        </section>
+        <div class="container">
+            <section id="hero" class="hero-container">
+                <h1></h1>
+            </section>
+            <section id="skills" class="skills-container">
+                <h2></h2>
+            </section>
+            <section class="portfolio">
+                <h2></h2>
+            </section>
+            <section class="video">
+                <h2></h2>
+            </section>
+            <section class="price">
+                <h2></h2>
+            </section>
+            <section class="contacts">
+                <h2></h2>
+            </section>
+        </div>    
     </main>
-    <footer></footer>
+    <footer>
+        <div class="container">
+
+        </div>
+    </footer>
     <script src="index.js"></script>
 </body>
 </html>

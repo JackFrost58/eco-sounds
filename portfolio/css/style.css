@@ -1,18 +1,18 @@
 @font-face {
     font-family: Inter;
-    src: url("assets/fonts/Inter-Regular.ttf");
+    src: url("../assets/fonts/Inter-Regular.ttf");
     font-weight: 400;
 }
 
 @font-face {
     font-family: Inter;
-    src: url("assets/fonts/Inter-Bold.ttf");
+    src: url("../assets/fonts/Inter-Bold.ttf");
     font-weight: 700;
 }
 
 @font-face {
     font-family: Merriweather;
-    src: url("assets/fonts/Merriweather-Bold.ttf");
+    src: url("../assets/fonts/Merriweather-Bold.ttf");
 }
 
 * {
@@ -20,11 +20,19 @@
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .container {
     display: flex;
+    justify-content: space-between;
     max-width: 1440px;
     margin: 0 auto;
     padding: 0 20px;
+    font-family: Inter, sans-serif;
+    font-weight: 400;
+    font-size: 20px;
 }
 
 header{    
@@ -41,4 +49,57 @@ header{
 
 h1 {
     font-family: Merriweather, serif;
+}
+
+.container__navbar {
+    display: flex;
+}
+
+.container__menu{
+    display: flex;
+    flex-direction: row;
+    width: 470px;
+    margin: 32px 0;
+}
+
+.container__menu li {
+    padding-right: 30px;
+    list-style-type: none;
+}
+
+.container__logo {
+    margin: 20px;
+}
+
+.container__link {
+    text-decoration: none;
+    color: white;
+}
+
+.container__link:hover {
+    color: #BDAE82;
+}
+
+.container-switch{
+    width: 70px;
+    height: 50px;
+    margin: 33px 20px 7px 0;
+    color: white;
+}
+
+.container-switch__button {
+    font-family: Inter, sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    background: none;
+    color: white;
+    border: none;
+}
+
+.container-switch__button:hover {
+    color: #BDAE82;
+}
+
+.container-switch__button_checked {
+    color: #BDAE82;
 }
