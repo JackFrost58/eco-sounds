@@ -101,6 +101,7 @@ header{
     font-family: Inter, sans-serif;
     font-weight: 400;
     font-size: 20px;
+    background-color: black;
 }
 
 .hero-container{
@@ -147,7 +148,6 @@ header{
 
 .skills-container {
     padding-top: 117px;
-    background-color: black;
 }
 
 .container-title{
@@ -221,4 +221,51 @@ header{
     text-align: center;
     line-height: 39px;
     color: white;
+}
+
+.portfolio-container__buttons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 60px 0;
+}
+
+.portfolio-container__button {
+    width: 220px;
+    height: 55px;
+    margin-right: 5px;
+    background-color: transparent;
+    border: 2px solid #BDAE82;
+    font-family: Inter, sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: #BDAE82;
+}
+
+.portfolio-container__button:hover {
+    content: "";
+    background-color: #BDAE82;
+    color: black;
+}
+
+.portfolio-container__button_pressed {
+    background-color: #BDAE82;
+    color: black;
+}
+
+.portfolio-container__images {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.portfolio-container__image {
+    padding: 0 25px 25px 0;
+}
+
+.portfolio-container__image:nth-child(3n + 3) {
+    padding-right: 0;
 }
