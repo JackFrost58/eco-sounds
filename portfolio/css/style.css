@@ -154,7 +154,7 @@ header{
     width: 49%;
     height: 67px;
     text-align: center;
-    margin: 0 auto;
+    margin: 0 auto 60px;
     background-image: linear-gradient(to top, #000 39px, #bdae82 39px, #bdae82 41px, #000 41px);
     color: #BDAE82;
 }
@@ -171,7 +171,7 @@ header{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin: 60px 20px 0;
+    margin: 0 20px;
     padding-bottom: 125px;
 }
 
@@ -228,7 +228,7 @@ header{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 60px 0;
+    margin-bottom: 60px;
 }
 
 .portfolio-container__button {
@@ -259,7 +259,7 @@ header{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    margin-bottom: 100px;
+    margin-bottom: 87px;
 }
 
 .portfolio-container__image {
@@ -268,4 +268,18 @@ header{
 
 .portfolio-container__image:nth-child(3n + 3) {
     padding-right: 0;
+}
+
+.video-container__player {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video-container__button {
+    position: absolute;
+    background: transparent;
+    border: none;
+    cursor: pointer;
 }
