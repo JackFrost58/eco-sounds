@@ -130,7 +130,7 @@ header{
     color: white;
 }
 
-.hero-container__button {
+.button {
     width: 220px;
     height: 55px;
     font-family: Inter, sans-serif;
@@ -141,7 +141,7 @@ header{
     cursor: pointer;
 }
 
-.hero-container__button:hover {
+.button:hover {
     background: white;
     color: #BDAE82;
 }
@@ -283,3 +283,68 @@ header{
     border: none;
     cursor: pointer;
 }
+
+.video-container {
+    margin-bottom: 113px;
+}
+
+.price-container {
+    margin-bottom: 100px;
+}
+
+.price-container__cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.price-container__card {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 112px 0;
+    margin-right: 25px;
+    border: 2px solid #BDAE82
+}
+
+.price-container__card:nth-child(3){
+    margin-right: 0;
+}
+
+.price-container__card-title {
+    font-family: Merriweather, serif;
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 40px;
+    color: white;
+}
+
+.price-container__price {
+    display: block;
+    margin-bottom: 35px;
+    font-family: Merriweather, serif;
+    font-size: 24px;
+    text-align: center;
+    color: #BDAE82;
+}
+
+.price-container__card-description {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 31px;
+    font-family: Inter, sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: white;
+}
+
+.price-container__text{
+    display: block;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.price-container__button{
+    margin-bottom: 40px;
+}
+
