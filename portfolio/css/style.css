@@ -154,7 +154,7 @@ header{
     width: 49%;
     height: 67px;
     text-align: center;
-    margin: 0 370px;
+    margin: 0 auto;
     background-image: linear-gradient(to top, #000 39px, #bdae82 39px, #bdae82 41px, #000 41px);
     color: #BDAE82;
 }
@@ -165,4 +165,60 @@ header{
     font-family: Merriweather, serif;
     font-size: 40px;
     background-color: black;
+}
+
+.skills-container__items {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 60px 20px 0;
+    padding-bottom: 125px;
+}
+
+.skills-container__item {
+    width: 300px;
+    height: 140px;
+    padding: 90px 12px 0;
+    background-position: center top;
+    background-repeat: no-repeat;
+  }
+  
+.skills-container__item:nth-child(1) {
+    background-image: url('../assets/svg/camera.svg');
+    background-size: 62px 50px;
+}
+
+.skills-container__item:nth-child(2) {
+    background-image: url('../assets/svg/video.svg');
+    background-size: 62px 50px;
+}
+
+.skills-container__item:nth-child(3) {
+    background-image: url('../assets/svg/image.svg');
+    background-size: 62px 50px;
+}
+
+.skills-container__item:nth-child(4) {
+    background-image: url('../assets/svg/mic.svg');
+    background-size: 62px 50px;
+}
+
+.skills-container__item-title {
+    font-family: Inter, sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 15px;
+    text-align: center;
+    line-height: 53px;
+    color: white;
+}
+
+.skills-container__item-text {
+    display: block;
+    font-family: Inter, sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+    line-height: 39px;
+    color: white;
 }
