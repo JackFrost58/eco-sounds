@@ -11,7 +11,11 @@
 <body>
     <header>
         <div class="header-container">
-            <img src="./assets/svg/logo.svg" class="header-container__logo" alt="logo">
+            <a href="https://instagram.com">
+                <svg class="header-container__logo">
+                  <use xlink:href="./assets/svg/sprite.svg#logo"></use>
+                </svg>
+            </a>
             <div class="header-container__navbar">
                 <nav>
                     <ul class="header-container__menu">
@@ -28,12 +32,12 @@
                             <a class="header-container__link" href="#price">Price</a>
                         </li>
                         <li>
-                            <a class="header-container__link" href="#contacts">Contacts</a>
+                            <a class="header-container__link" href="#contact">Contacts</a>
                         </li>
                     </ul>
                 </nav>
                 <div class="header-container-switch">
-                    <button class="header-container-switch__button container-switch__button_checked">en </button>
+                    <button class="header-container-switch__button header-container-switch__button_checked">en </button>
                     <span>/</span>  
                     <button class="header-container-switch__button"> ru</button>
                 </div>
@@ -151,7 +155,7 @@
             </section>
             <section id="contact" class="contact-container">
                 <h2 class="contact-container__title">Contact me</h2>
-                <form action="" class="contact-container__form">
+                <form action="./" class="contact-container__form">
                     <input type="email" placeholder="E-mail" class="contact-container__field">
                     <input type="tel" placeholder="Phone" class="contact-container__field">
                     <textarea class="contact-container__field contact-container__message" placeholder="Message"></textarea>
@@ -162,9 +166,36 @@
     </main>
     <footer>
         <div class="container footer-container">
-            
+            <div class="github-wrapper">
+                <span class="github-wrapper__text">©</span>
+                <span class="github-wrapper__text">2022</span>
+                <a href="https://github.com/JackFrost58" class="link">github</a>
+            </div>
+            <a href="https://rs.school/js-stage0/" class="rs-link">Rolling Scopes School</a>
+            <div class="footer-container__images">
+                <a href="https://instagram.com">
+                    <svg class="footer-container__image">
+                      <use xlink:href="./assets/svg/sprite.svg#inst"></use>
+                    </svg>
+                </a>
+                <a href="https://facebook.com">
+                    <svg class="footer-container__image">
+                      <use xlink:href="./assets/svg/sprite.svg#fb"></use>
+                    </svg>
+                </a>
+                <a href="https://twitter.com">
+                    <svg class="footer-container__image">
+                      <use xlink:href="./assets/svg/sprite.svg#tw"></use>
+                    </svg>
+                </a>
+                <a href="https://pinterest.com">
+                    <svg class="footer-container__image">
+                      <use xlink:href="./assets/svg/sprite.svg#pinterest"></use>
+                    </svg>
+                </a>
+            </div>
         </div>
     </footer>
-    <script src="index.js"></script>
+    <script src="./js/index.js"></script>
 </body>
 </html>

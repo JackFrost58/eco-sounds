@@ -62,7 +62,16 @@ header{
 }
 
 .header-container__logo {
-    margin: 20px;
+    width: 50px;
+    height: 50px;
+    margin: 20px 20px 15px;
+    fill: white;
+    transition: 1s;
+}
+
+.header-container__logo:hover {
+    fill: #BDAE82;
+    transform: scale(1.2);
 }
 
 .header-container__link {
@@ -143,9 +152,11 @@ header{
     background: #BDAE82;
     border: none;
     cursor: pointer;
+    transition: 1s;
 }
 
 .button:hover {
+    transform: scale(1.2);
     background: white;
     color: #BDAE82;
 }
@@ -156,7 +167,7 @@ header{
 
 .container-title{
     width: 49%;
-    height: 67px;
+    height: 65px;
     text-align: center;
     margin: 0 auto 60px;
     background-image: linear-gradient(to top, #000 39px, #bdae82 39px, #bdae82 41px, #000 41px);
@@ -238,7 +249,7 @@ header{
 .portfolio-container__button {
     width: 220px;
     height: 55px;
-    margin-right: 5px;
+    margin-right: 4px;
     background-color: transparent;
     border: 2px solid #BDAE82;
     font-family: Inter, sans-serif;
@@ -263,7 +274,7 @@ header{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    margin-bottom: 87px;
+    margin-bottom: 90px;
 }
 
 .portfolio-container__image {
@@ -289,7 +300,7 @@ header{
 }
 
 .video-container {
-    margin-bottom: 113px;
+    margin-bottom: 118px;
 }
 
 .price-container {
@@ -413,5 +424,58 @@ header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding: 63px 0;
     color: white;
+}
+
+.github-wrapper {
+    margin-left: 20px;
+}
+
+.github-wrapper__text {
+    margin-right: 16px;
+}
+
+.link {
+    margin-right: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+.rs-link {
+    text-decoration: none;
+    color: white;
+}
+
+.rs-link:hover {
+    color: #BDAE82;
+}
+
+.link:hover {
+    color: #BDAE82;
+}
+
+.github-wrapper__link:hover {
+    color: #BDAE82;
+}
+
+.footer-container__images {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 188px;
+    margin-right: 20px;
+}
+
+.footer-container__image {
+    width: 32px;
+    height: 32px;
+    transition: 1s;
+    cursor: pointer;
+    fill: white;
+}
+
+.footer-container__image:hover {
+    fill: #BDAE82;
+    transform: scale(1.2);
 }
