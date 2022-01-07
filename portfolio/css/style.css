@@ -157,8 +157,7 @@ header{
 
 .button:hover {
     transform: scale(1.2);
-    background: white;
-    color: #BDAE82;
+    color: white;
 }
 
 .skills-container {
@@ -260,8 +259,7 @@ header{
 
 .portfolio-container__button:hover {
     content: "";
-    background-color: #BDAE82;
-    color: black;
+    color: white;
 }
 
 .portfolio-container__button_pressed {
@@ -297,6 +295,11 @@ header{
     background: transparent;
     border: none;
     cursor: pointer;
+    fill: white;
+}
+
+.video-container__button:hover {
+    fill: #BDAE82;
 }
 
 .video-container {
