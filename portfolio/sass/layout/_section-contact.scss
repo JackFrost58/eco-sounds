@@ -1,0 +1,53 @@
+.contact-container {
+    @include flex_block(column);
+    
+    align-items: flex-end;
+    padding: 83px 20px 195px;
+    background-position: center center;
+    background: url("./assets/img/contacts.jpg");
+}
+  
+.contact-container__title {
+    @include font($font-MB, 40px, 40px);  
+
+    width: 450px;
+    color: $text-color--main;
+}
+  
+.contact-container__form {
+    @include flex_block(column);
+
+    width: 450px;
+    margin-top: 58px;
+}
+  
+.contact-container__field {
+    @include font($font-IR, 20px, 20px);
+
+    margin-bottom: 20px;
+    padding: 11px 0 11px 18px;
+    border: 2px solid $text-color--main;
+    background: rgba(0, 0, 0, 0.5);
+    color: $text-color--main;
+
+    &::placeholder {
+        content: "";
+
+        @include font($font-IR, 20px, 20px);
+        color: $text-color--main;
+    }
+}
+    
+.contact-container__message {
+    height: 85px;
+    margin-bottom: 30px;
+    padding: 11px 0 0 18px;
+    resize: none;
+
+    &::placeholder {
+        content: "";
+
+        @include font($font-IR, 20px, 20px);
+        color: $text-color--main;
+    }
+}

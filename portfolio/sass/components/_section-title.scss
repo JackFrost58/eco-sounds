@@ -1,0 +1,16 @@
+.container-title {
+  @include size_block(49%, 63px);
+   
+  text-align: center;
+  margin: 0 auto 60px;
+  background-image: linear-gradient(to top, $bg-color--black 39px, $text-color--main 39px, $text-color--main 41px, $bg-color--black 41px);
+  color: $text-color--main;
+}
+  
+.container-title__name {
+  @include font($font-MB, 40px, 40px);
+
+  display: inline-block;
+  padding: 0 20px;
+  background-color: $bg-color--black;
+}

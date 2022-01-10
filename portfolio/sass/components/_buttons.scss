@@ -1,0 +1,43 @@
+.header-container-switch__button {
+    @include font($font-IB, 20px, 20px);
+
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: $text-color--white;
+
+    &:hover {
+        color: $text-color--main;
+    }
+}
+  
+.header-container-switch__button_checked {
+    color: $text-color--main;
+}
+
+.button {
+    @include size_block(220px, 55px);
+    @include font($font-IR, 20px, 20px);
+    
+    background: $text-color--main;
+    border: none;
+    cursor: pointer;
+    transition: 1s;
+
+    &:hover {
+        transform: scale(1.2);
+        color: $text-color--white
+    }
+}
+
+.video-container__button {
+    position: absolute;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    fill: $text-color--white;
+
+    &:hover {
+        fill: $text-color--main
+    }
+}

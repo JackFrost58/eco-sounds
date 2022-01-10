@@ -1,0 +1,31 @@
+$font-IR: "InterRegular", sans-serif;
+$font-IB: "InterBold", sans-serif;
+$font-MB: "Merriweather", serif;
+$mobile: 376px;
+$desktop: 1440px;
+$max-screen: 1250px;
+$tablet: 770px;
+$text-color--main: #BDAE82;
+$text-color--white: white;
+$bg-color--black: black;
+
+@mixin size_block($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+@mixin font($font, $size, $line) {
+    font-family: $font;
+    font-size: $size;
+    line-height: $line;
+}
+
+@mixin flex_block($direction) {
+    display: flex;
+    flex-direction: $direction;
+}
+
+@mixin bg-svg_item($svgTitle) {
+    background-image: url("./assets/svg/"+$svgTitle+".svg");
+    background-size: 62px 50px;
+}

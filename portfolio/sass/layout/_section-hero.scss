@@ -1,0 +1,25 @@
+.hero-container {
+    background-image: url(./assets/img/header-bg.jpg);
+    background-position: center -90px;
+    background-repeat: no-repeat;
+  }
+  
+  .hero-container__name {
+    @include font($font-MB, 60px, 120px);
+  
+    color: $text-color--white;
+  }
+  
+  .hero-container__introduce {
+    @include flex_block(column);
+  
+    padding: 160px 0 330px 80px;
+  }
+  
+  .hero-container__text {
+    padding-top: 8px;
+    margin-bottom: 20px;
+    line-height: 42px;
+    color: $text-color--white;
+  }
+  

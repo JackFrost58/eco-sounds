@@ -1,0 +1,14 @@
+.video-container__player {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video-container {
+    margin-bottom: 118px;
+}
+  
+.video-container__svg {
+    @include size_block(130px, 130px);
+}

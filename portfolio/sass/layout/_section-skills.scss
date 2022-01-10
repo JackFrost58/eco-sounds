@@ -1,0 +1,52 @@
+.skills-container {
+    padding-top: 119px;
+}
+  
+.skills-container__items {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 20px;
+    padding-bottom: 129px;
+}
+  
+.skills-container__item {
+    @include size_block(300px, 140px);
+
+    padding: 90px 12px 0;
+    background-position: center top;
+    background-repeat: no-repeat;
+
+    &:nth-child(1) {
+        @include bg-svg_item("camera");
+    }
+
+    &:nth-child(2) {
+        @include bg-svg_item("video");
+    }
+
+    &:nth-child(3) {
+        @include bg-svg_item("image");
+    }
+
+    &:nth-child(4) {
+        @include bg-svg_item("mic");
+    }
+}
+  
+.skills-container__item-title {
+    @include font($font-IB, 20px, 56px);
+
+    margin-bottom: 15px;
+    text-align: center;
+    color: $text-color--white;
+}
+  
+.skills-container__item-text {
+    @include font($font-IR, 18px, 35px); 
+
+    display: block;
+    text-align: center;
+    color: $text-color--white;
+}
+  
