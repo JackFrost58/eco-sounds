@@ -5,6 +5,10 @@
   margin: 0 auto 60px;
   background-image: linear-gradient(to top, $bg-color--black 39px, $text-color--main 39px, $text-color--main 41px, $bg-color--black 41px);
   color: $text-color--main;
+
+  @media (max-width: $tablet)  {
+    margin: 0 auto 45px;
+  }
 }
   
 .container-title__name {
@@ -13,4 +17,8 @@
   display: inline-block;
   padding: 0 20px;
   background-color: $bg-color--black;
+
+  @media (max-width: $tablet)  {
+    @include font($font-MB, 32px, 44px);
+  }
 }

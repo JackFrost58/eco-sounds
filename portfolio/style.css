@@ -119,6 +119,12 @@
   color: #BDAE82;
 }
 
+@media (max-width: 770px) {
+  .container-title {
+    margin: 0 auto 45px;
+  }
+}
+
 .container-title__name {
   font-family: "MerriweatherBold", serif;
   font-size: 40px;
@@ -126,6 +132,14 @@
   display: inline-block;
   padding: 0 20px;
   background-color: black;
+}
+
+@media (max-width: 770px) {
+  .container-title__name {
+    font-family: "MerriweatherBold", serif;
+    font-size: 32px;
+    line-height: 44px;
+  }
 }
 
 * {
@@ -428,6 +442,13 @@ header {
   padding-top: 119px;
 }
 
+@media (max-width: 770px) {
+  .skills-container {
+    padding-top: 99px;
+    margin-bottom: 20px;
+  }
+}
+
 .skills-container__items {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -439,6 +460,14 @@ header {
       flex-wrap: wrap;
   margin: 0 20px;
   padding-bottom: 129px;
+}
+
+@media (max-width: 770px) {
+  .skills-container__items {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
 }
 
 .skills-container__item {
@@ -469,6 +498,15 @@ header {
   background-size: 62px 50px;
 }
 
+@media (max-width: 770px) {
+  .skills-container__item {
+    padding: 70px 0 0;
+  }
+  .skills-container__item:nth-child(1) {
+    margin-bottom: 50px;
+  }
+}
+
 .skills-container__item-title {
   font-family: "InterBold", sans-serif;
   font-size: 20px;
@@ -478,6 +516,12 @@ header {
   color: white;
 }
 
+@media (max-width: 770px) {
+  .skills-container__item-title {
+    margin-bottom: 11px;
+  }
+}
+
 .skills-container__item-text {
   font-family: "InterRegular", sans-serif;
   font-size: 18px;
@@ -485,6 +529,12 @@ header {
   display: block;
   text-align: center;
   color: white;
+}
+
+@media (max-width: 770px) {
+  .skills-container__item-text {
+    line-height: 25px;
+  }
 }
 
 .portfolio-container__buttons {

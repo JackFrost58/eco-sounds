@@ -1,5 +1,10 @@
 .skills-container {
     padding-top: 119px;
+
+    @media (max-width: $tablet)  {
+        padding-top: 99px; 
+        margin-bottom: 20px;
+    }
 }
   
 .skills-container__items {
@@ -8,6 +13,10 @@
     flex-wrap: wrap;
     margin: 0 20px;
     padding-bottom: 129px;
+
+    @media (max-width: $tablet)  {
+        justify-content: space-evenly; 
+    }
 }
   
 .skills-container__item {
@@ -32,6 +41,14 @@
     &:nth-child(4) {
         @include bg-svg_item("mic");
     }
+
+    @media (max-width: $tablet)  {
+        padding: 70px 0 0;
+
+        &:nth-child(1) {
+            margin-bottom: 50px;
+        }
+    }
 }
   
 .skills-container__item-title {
@@ -40,6 +57,10 @@
     margin-bottom: 15px;
     text-align: center;
     color: $text-color--white;
+
+    @media (max-width: $tablet)  {
+        margin-bottom: 11px;
+    }
 }
   
 .skills-container__item-text {
@@ -48,5 +69,9 @@
     display: block;
     text-align: center;
     color: $text-color--white;
+
+    @media (max-width: $tablet)  {
+        line-height: 25px; 
+    }
 }
   
