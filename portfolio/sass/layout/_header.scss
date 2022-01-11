@@ -1,7 +1,9 @@
 header {
-    background: url("./assets/img/header-bg.jpg");
-    background-repeat: no-repeat;
-    background-position: center 0;
+    @include bg_header-hero("header-bg-desktop", 0);
+
+    @media (max-width: $tablet)  {
+        @include bg_header-hero("hero-bg-tablet", 0);  
+    }
 }
   
 .header-container {

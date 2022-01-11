@@ -1,6 +1,7 @@
 $font-IR: "InterRegular", sans-serif;
 $font-IB: "InterBold", sans-serif;
-$font-MB: "Merriweather", serif;
+$font-MB: "MerriweatherBold", serif;
+$font-MR: "MerriweatherRegular", serif;
 $mobile: 322px;
 $desktop: 1440px;
 $tablet: 770px;
@@ -27,4 +28,10 @@ $bg-color--black: black;
 @mixin bg-svg_item($svgTitle) {
     background-image: url("./assets/svg/"+$svgTitle+".svg");
     background-size: 62px 50px;
+}
+
+@mixin bg_header-hero($nameImage, $position) {
+    background: url("./assets/img/"+$nameImage+".jpg");
+    background-position: center $position;
+    background-repeat: no-repeat;
 }
