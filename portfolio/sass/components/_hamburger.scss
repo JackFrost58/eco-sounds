@@ -1,0 +1,40 @@
+.hamburger {
+    display: none;
+
+    .hamburger__line {
+        @include size_block(50px, 3px);
+        
+        display: block;
+        margin: 10px auto;
+        background-color: $text-color--white;
+        transition: all 0.3s ease-in-out;
+    }
+
+    &:hover {
+
+        .hamburger__line {
+            background-color: $text-color--main;
+        }
+        
+        cursor: pointer;
+    }
+
+    @media (min-width: $mobile) and (max-width: $tablet)  {
+        display: block;
+    }
+}
+
+  /* ONE */
+  
+  #hamburger-1.is-active .line:nth-child(2){
+    opacity: 0;
+  }
+  
+  #hamburger-1.is-active .line:nth-child(1){
+    transform: translateY(13px) rotate(45deg);
+  }
+  
+  #hamburger-1.is-active .line:nth-child(3){
+    transform: translateY(-13px) rotate(-45deg);
+  }
+  

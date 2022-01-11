@@ -13,6 +13,49 @@
   src: url(./assets/fonts/Merriweather-Bold.ttf);
 }
 
+.hamburger {
+  display: none;
+}
+
+.hamburger .hamburger__line {
+  width: 50px;
+  height: 3px;
+  display: block;
+  margin: 10px auto;
+  background-color: white;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.hamburger:hover {
+  cursor: pointer;
+}
+
+.hamburger:hover .hamburger__line {
+  background-color: #BDAE82;
+}
+
+@media (min-width: 322px) and (max-width: 770px) {
+  .hamburger {
+    display: block;
+  }
+}
+
+/* ONE */
+#hamburger-1.is-active .line:nth-child(2) {
+  opacity: 0;
+}
+
+#hamburger-1.is-active .line:nth-child(1) {
+  -webkit-transform: translateY(13px) rotate(45deg);
+          transform: translateY(13px) rotate(45deg);
+}
+
+#hamburger-1.is-active .line:nth-child(3) {
+  -webkit-transform: translateY(-13px) rotate(-45deg);
+          transform: translateY(-13px) rotate(-45deg);
+}
+
 .header-container-switch__button {
   font-family: "InterBold", sans-serif;
   font-size: 20px;
@@ -98,6 +141,7 @@ body {
   font-size: 20px;
   line-height: 20px;
   max-width: 1440px;
+  min-width: 322px;
   margin: 0 auto;
   font-size: 20px;
   background-color: black;
@@ -120,6 +164,7 @@ header {
       -ms-flex-pack: justify;
           justify-content: space-between;
   max-width: 1440px;
+  min-width: 322px;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -128,6 +173,32 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (min-width: 322px) and (max-width: 770px) {
+  .header-container__navbar {
+    margin-right: 44px;
+  }
+}
+
+.header-container__navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (min-width: 322px) and (max-width: 770px) {
+  .header-container__navigation {
+    width: 50px;
+    height: 50px;
+    display: block;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
 }
 
 .header-container__menu {
@@ -147,6 +218,12 @@ header {
   list-style-type: none;
 }
 
+@media (min-width: 322px) and (max-width: 770px) {
+  .header-container__menu {
+    display: none;
+  }
+}
+
 .header-container__logo {
   width: 50px;
   height: 50px;
@@ -162,6 +239,12 @@ header {
           transform: scale(1.2);
 }
 
+@media (min-width: 322px) and (max-width: 770px) {
+  .header-container__logo {
+    margin: 20px 40px 15px;
+  }
+}
+
 .header-container__link {
   text-decoration: none;
   color: white;
@@ -174,8 +257,19 @@ header {
 .header-container-switch {
   width: 70px;
   height: 50px;
+  font-family: "InterBold", sans-serif;
+  font-size: 20px;
+  line-height: 20px;
   margin: 33px 20px 7px 0;
   color: white;
+}
+
+@media (min-width: 322px) and (max-width: 770px) {
+  .header-container-switch {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
 }
 
 .footer-container {

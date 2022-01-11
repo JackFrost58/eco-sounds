@@ -1,7 +1,8 @@
 @import './sass/abstract/variables';
 @import './sass/base/fonts';
+@import './sass/components/hamburger';
 @import './sass/components/buttons';
-@import './sass/components/section-title';
+@import './sass/components/title-section';
 @import './sass/layout/body';
 @import './sass/layout/header';
 @import './sass/layout/footer';
@@ -11,5 +12,4 @@
 @import './sass/layout/section-video';
 @import './sass/layout/section-price';
 @import './sass/layout/section-contact';
-
 /*# sourceMappingURL=style.scss.map */
