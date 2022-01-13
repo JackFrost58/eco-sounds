@@ -444,7 +444,7 @@ header {
 @media (max-width: 770px) {
   .skills-container {
     padding-top: 99px;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
   }
 }
 
@@ -603,6 +603,12 @@ header {
   margin-bottom: 92px;
 }
 
+@media (max-width: 770px) {
+  .portfolio-container__images {
+    margin-bottom: 72px;
+  }
+}
+
 .portfolio-container__image {
   padding: 0 25px 25px 0;
 }
@@ -635,18 +641,30 @@ header {
 }
 
 .video-player {
-  width: 99%;
+  width: 97%;
 }
 
 @media (max-width: 770px) {
   .video-player {
     width: 100%;
+    content: url(./assets/img/bg-tablet-video-player.jpg);
   }
 }
 
 .video-container__svg {
   width: 130px;
   height: 130px;
+}
+
+@media (max-width: 770px) {
+  .video-container__svg {
+    width: 65px;
+    height: 65px;
+  }
+}
+
+.video-container__title_bottom {
+  margin-bottom: 50px;
 }
 
 .price-container {

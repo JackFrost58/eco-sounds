@@ -41,6 +41,10 @@
   flex-wrap: wrap;
   justify-content: center;
   margin-bottom: 92px;
+
+  @media (max-width: $tablet)  {
+    margin-bottom: 72px;
+  }
 }
   
 .portfolio-container__image {
