@@ -12,7 +12,6 @@ header {
     display: flex;
     justify-content: space-between;
     max-width: $desktop;
-    min-width: $mobile;
     margin: 0 auto;
     padding: 0 20px;
 }
@@ -21,7 +20,7 @@ header {
     display: flex;
     align-items: center;
 
-    @media (min-width: $mobile) and (max-width: $tablet)  {
+    @media (max-width: $tablet)  {
         margin-right: 44px;
     }
 }
@@ -29,7 +28,7 @@ header {
 .header-container__navigation{
     display: flex;
     
-    @media (min-width: $mobile) and (max-width: $tablet)  {
+    @media (max-width: $tablet)  {
         @include size_block(50px, 50px);
         
         display: block;
@@ -48,7 +47,7 @@ header {
         list-style-type: none;
     }
 
-    @media (min-width: $mobile) and (max-width: $tablet)  {
+    @media (max-width: $tablet)  {
         display: none;
     }
 }
@@ -65,7 +64,7 @@ header {
         transform: scale(1.2);
     }
 
-    @media (min-width: $mobile) and (max-width: $tablet)  {
+    @media (max-width: $tablet)  {
         margin: 20px 40px 15px;
     }
 }
@@ -86,7 +85,7 @@ header {
     margin: 33px 20px 7px 0;
     color: $text-color--white;
 
-    @media (min-width: $mobile) and (max-width: $tablet)  {
+    @media (max-width: $tablet)  {
         order: 1;
     }
 }
