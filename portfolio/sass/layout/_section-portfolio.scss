@@ -4,6 +4,11 @@
   flex-wrap: wrap;
   justify-content: center;
   margin-bottom: 60px;
+
+  @media (max-width: $tablet)  {
+    margin-bottom: 55px;
+    padding: 5px 50px 0;
+  }
 }
   
 .portfolio-container__button {
@@ -17,6 +22,11 @@
   
   &:hover {
     color: $text-color--white;
+  }
+
+  @media (max-width: $tablet)  {
+    margin-right: 5px;
+    margin-bottom: 5px;
   }
 }
   
@@ -37,6 +47,10 @@
   padding: 0 25px 25px 0;
 
   &:nth-child(3n+3) {
+    padding-right: 0;
+  }
+
+  @media (max-width: $tablet)  {
     padding-right: 0;
   }
 }

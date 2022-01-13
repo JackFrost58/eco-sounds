@@ -445,7 +445,7 @@ header {
 @media (max-width: 770px) {
   .skills-container {
     padding-top: 99px;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
   }
 }
 
@@ -553,6 +553,13 @@ header {
   margin-bottom: 60px;
 }
 
+@media (max-width: 770px) {
+  .portfolio-container__buttons {
+    margin-bottom: 55px;
+    padding: 5px 50px 0;
+  }
+}
+
 .portfolio-container__button {
   width: 220px;
   height: 55px;
@@ -567,6 +574,13 @@ header {
 
 .portfolio-container__button:hover {
   color: white;
+}
+
+@media (max-width: 770px) {
+  .portfolio-container__button {
+    margin-right: 5px;
+    margin-bottom: 5px;
+  }
 }
 
 .portfolio-container__button_pressed {
@@ -596,6 +610,12 @@ header {
 
 .portfolio-container__image:nth-child(3n+3) {
   padding-right: 0;
+}
+
+@media (max-width: 770px) {
+  .portfolio-container__image {
+    padding-right: 0;
+  }
 }
 
 .video-container__player {
