@@ -319,8 +319,30 @@ header {
   color: white;
 }
 
+@media (max-width: 770px) {
+  .footer-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0 0 28px;
+  }
+}
+
 .github-wrapper {
   margin-left: 20px;
+}
+
+@media (max-width: 770px) {
+  .github-wrapper {
+    margin: 32px 0 20px 15px;
+  }
 }
 
 .github-wrapper__text {
@@ -346,6 +368,12 @@ header {
   color: #BDAE82;
 }
 
+@media (max-width: 770px) {
+  .rs-link {
+    margin-bottom: 30px;
+  }
+}
+
 .github-wrapper__link:hover {
   color: #BDAE82;
 }
@@ -363,6 +391,12 @@ header {
           justify-content: space-between;
   width: 188px;
   margin-right: 20px;
+}
+
+@media (max-width: 770px) {
+  .footer-container__images {
+    margin-right: 0px;
+  }
 }
 
 .footer-container__image {
@@ -508,7 +542,7 @@ header {
     padding: 70px 0 0;
   }
   .skills-container__item:nth-child(1) {
-    margin-bottom: 50px;
+    margin-bottom: 48px;
   }
 }
 
@@ -685,7 +719,7 @@ header {
 
 @media (max-width: 770px) {
   .price-container {
-    margin-bottom: 30px;
+    margin-bottom: 28px;
   }
 }
 
@@ -744,6 +778,12 @@ header {
   color: white;
 }
 
+@media (max-width: 770px) {
+  .price-container__card-title {
+    margin-bottom: 42px;
+  }
+}
+
 .price-container__price {
   font-family: "MerriweatherBold", serif;
   font-size: 24px;
@@ -800,8 +840,8 @@ header {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding-top: 76px;
-    padding-bottom: 0px;
+    padding-top: 73px;
+    padding-bottom: 107px;
     background: url("./assets/img/bg-tablet-contacts.jpg");
   }
 }

@@ -4,10 +4,21 @@
     justify-content: space-between;
     padding: 63px 0;
     color: $text-color--white;
+
+    @media (max-width: $tablet)  {
+        @include flex_block(column);
+
+        align-items: center;
+        padding: 0 0 28px;
+    }
 }
   
 .github-wrapper {
     margin-left: 20px;
+
+    @media (max-width: $tablet)  {
+        margin: 32px 0 20px 15px;
+    }
 }
   
 .github-wrapper__text {
@@ -31,6 +42,10 @@
     &:hover {
         color: $text-color--main;
     }
+
+    @media (max-width: $tablet)  {
+        margin-bottom: 30px;
+    }
 }
    
 .github-wrapper__link:hover {
@@ -43,6 +58,10 @@
     justify-content: space-between;
     width: 188px;
     margin-right: 20px;
+
+    @media (max-width: $tablet)  {
+        margin-right: 0px;
+    }
 }
   
 .footer-container__image {
