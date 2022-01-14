@@ -24,9 +24,12 @@
     color: $text-color--white;
   }
 
+  @media (max-width: $tv-size) {
+    margin-bottom: 5px;
+  }
+
   @media (max-width: $tablet)  {
     margin-right: 5px;
-    margin-bottom: 5px;
   }
 }
   
@@ -54,7 +57,15 @@
     padding-right: 0;
   }
 
+  @media (max-width: $tv-size) {
+    padding-right: 25px;
+  }
+
   @media (max-width: $tablet)  {
     padding-right: 0;
+  }
+
+  @media (max-width: $intermediate)  {
+    width: 88%;
   }
 }

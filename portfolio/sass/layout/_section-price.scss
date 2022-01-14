@@ -1,5 +1,5 @@
 .price-container {
-    margin-bottom: 100px;
+    margin-bottom: 80px;
 
     @media (max-width: $tablet)  {
         margin-bottom: 28px;
@@ -22,7 +22,8 @@
 
     padding: 50px 112px 0;
     margin-right: 25px;
-    border: 2px solid $text-color--main;
+    margin-bottom: 20px;
+    border: 3px solid $text-color--main;
 
     &:nth-child(3) {
         margin-right: 0;
@@ -31,7 +32,12 @@
     @media (max-width: $tablet)  {
         margin-bottom: 53px;
         margin-right: 0;
-        padding: 48px 98px 0;
+        padding: 46px 98px 0;
+    }
+    
+    @media (max-width: $intermediate)  {
+        width: 87%;
+        padding: 25px 5px;
     }
 }
 
@@ -72,4 +78,8 @@
 
 .price-container__button {
     margin-bottom: 40px;
+
+    @media (max-width: $intermediate)  {
+        margin: 0 auto;
+    }
 }

@@ -11,7 +11,7 @@
   
   padding: 160px 0 330px 80px;
 
-  @media (min-width: $mobile) and (max-width: $tablet)  {
+  @media (max-width: $tablet)  {
     padding: 78px 60px 152px;
   }
 }
@@ -33,11 +33,16 @@
   line-height: 42px;
   color: $text-color--white;
 
-  @media (min-width: $mobile) and (max-width: $tablet)  {
+  @media (max-width: $tablet)  {
     width: 390px;
     line-height: 25px;
     padding-top: 17px;
     margin-bottom: 58px;
+  }
+
+  @media (max-width: $intermediate)  {
+    width: 100%;
+    margin-bottom: 30px;
   }
 }
   

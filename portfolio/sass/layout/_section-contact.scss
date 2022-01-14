@@ -25,6 +25,10 @@
         
         text-align: center;
     }
+
+    @media (max-width: $intermediate)  {
+        width: 92%;
+    }
 }
   
 .contact-container__form {
@@ -32,6 +36,10 @@
 
     width: 450px;
     margin-top: 58px;
+
+    @media (max-width: $intermediate)  {
+        width: 92%;
+    }
 }
   
 .contact-container__field {

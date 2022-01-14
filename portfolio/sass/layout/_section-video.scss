@@ -31,5 +31,7 @@
 }
 
 .video-container__title_bottom {
-    margin-bottom: 50px;
+    @media (max-width: $tablet)  {
+        margin-bottom: 50px;
+    }
 }

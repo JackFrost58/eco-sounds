@@ -3,7 +3,7 @@
 
     @media (max-width: $tablet)  {
         padding-top: 99px; 
-        margin-bottom: 20px;
+        margin-bottom: 41px;
     }
 }
   
@@ -12,7 +12,11 @@
     justify-content: space-between;
     flex-wrap: wrap;
     margin: 0 20px;
-    padding-bottom: 129px;
+    padding-bottom: 109px;
+
+    @media (max-width: $tv-size) {
+        justify-content: space-evenly; 
+    }
 
     @media (max-width: $tablet)  {
         justify-content: space-evenly; 
@@ -22,7 +26,7 @@
 .skills-container__item {
     @include size_block(300px, 140px);
 
-    padding: 90px 12px 0;
+    padding: 90px 12px 20px;
     background-position: center top;
     background-repeat: no-repeat;
 
