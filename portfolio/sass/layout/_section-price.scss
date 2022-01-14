@@ -1,5 +1,9 @@
 .price-container {
     margin-bottom: 100px;
+
+    @media (max-width: $tablet)  {
+        margin-bottom: 30px;
+    }
 }
 
 .price-container__cards {

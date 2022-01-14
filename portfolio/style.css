@@ -683,6 +683,12 @@ header {
   margin-bottom: 100px;
 }
 
+@media (max-width: 770px) {
+  .price-container {
+    margin-bottom: 30px;
+  }
+}
+
 .price-container__cards {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -786,7 +792,18 @@ header {
           align-items: flex-end;
   padding: 83px 20px 195px;
   background-position: center center;
-  background: url("./assets/img/contacts.jpg");
+  background: url("./assets/img/bg-desktop-contacts.jpg");
+}
+
+@media (max-width: 770px) {
+  .contact-container {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-top: 76px;
+    padding-bottom: 0px;
+    background: url("./assets/img/bg-tablet-contacts.jpg");
+  }
 }
 
 .contact-container__title {
@@ -795,6 +812,15 @@ header {
   line-height: 40px;
   width: 450px;
   color: #BDAE82;
+}
+
+@media (max-width: 770px) {
+  .contact-container__title {
+    font-family: "MerriweatherBold", serif;
+    font-size: 32px;
+    line-height: 32px;
+    text-align: center;
+  }
 }
 
 .contact-container__form {
@@ -889,5 +915,11 @@ header {
   font-size: 20px;
   line-height: 20px;
   color: #BDAE82;
+}
+
+@media (max-width: 770px) {
+  .contact-container__button {
+    margin: 0 auto;
+  }
 }
 /*# sourceMappingURL=style.css.map */

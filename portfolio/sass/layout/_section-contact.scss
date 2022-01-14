@@ -4,7 +4,14 @@
     align-items: flex-end;
     padding: 83px 20px 195px;
     background-position: center center;
-    background: url("./assets/img/contacts.jpg");
+    background: url("./assets/img/bg-desktop-contacts.jpg");
+
+    @media (max-width: $tablet)  {
+        align-items: center;
+        padding-top: 76px;
+        padding-bottom: 0px;
+        background: url("./assets/img/bg-tablet-contacts.jpg");
+    }
 }
   
 .contact-container__title {
@@ -12,6 +19,12 @@
 
     width: 450px;
     color: $text-color--main;
+
+    @media (max-width: $tablet)  {
+        @include font($font-MB, 32px, 32px);
+        
+        text-align: center;
+    }
 }
   
 .contact-container__form {
@@ -49,5 +62,11 @@
 
         @include font($font-IR, 20px, 20px);
         color: $text-color--main;
+    }
+}
+
+.contact-container__button {
+    @media (max-width: $tablet)  {
+       margin: 0 auto;
     }
 }
