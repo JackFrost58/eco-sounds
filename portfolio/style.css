@@ -98,6 +98,12 @@
   color: white;
 }
 
+@media (max-width: 770px) {
+  .button {
+    height: 57px;
+  }
+}
+
 .video-container__button {
   position: absolute;
   background: transparent;
@@ -640,6 +646,12 @@ header {
   margin-bottom: 118px;
 }
 
+@media (max-width: 770px) {
+  .video-container {
+    margin-bottom: 99px;
+  }
+}
+
 .video-player {
   width: 97%;
 }
@@ -686,6 +698,12 @@ header {
           justify-content: center;
 }
 
+@media (max-width: 770px) {
+  .price-container__cards {
+    padding-top: 5px;
+  }
+}
+
 .price-container__card {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -701,6 +719,14 @@ header {
 
 .price-container__card:nth-child(3) {
   margin-right: 0;
+}
+
+@media (max-width: 770px) {
+  .price-container__card {
+    margin-bottom: 53px;
+    margin-right: 0;
+    padding: 48px 98px 0;
+  }
 }
 
 .price-container__card-title {

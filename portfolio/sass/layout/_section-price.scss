@@ -7,6 +7,10 @@
 
     flex-wrap: wrap;
     justify-content: center;
+
+    @media (max-width: $tablet)  {
+        padding-top: 5px;
+    }
 }
 
 .price-container__card {
@@ -18,6 +22,12 @@
 
     &:nth-child(3) {
         margin-right: 0;
+    }
+
+    @media (max-width: $tablet)  {
+        margin-bottom: 53px;
+        margin-right: 0;
+        padding: 48px 98px 0;
     }
 }
 

@@ -7,6 +7,10 @@
 
 .video-container {
     margin-bottom: 118px;
+
+    @media (max-width: $tablet)  {
+        margin-bottom: 99px;
+    }
 }
 
 .video-player {

@@ -28,6 +28,11 @@
         transform: scale(1.2);
         color: $text-color--white
     }
+
+    @media (max-width: $tablet)  {
+        height: 57px;
+       
+    }
 }
 
 .video-container__button {
