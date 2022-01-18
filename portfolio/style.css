@@ -22,6 +22,20 @@
   display: none;
 }
 
+.hamburger .active:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger .active:nth-child(1) {
+  -webkit-transform: translateY(13px) rotate(45deg);
+          transform: translateY(13px) rotate(45deg);
+}
+
+.hamburger .active:nth-child(3) {
+  -webkit-transform: translateY(-13px) rotate(-45deg);
+          transform: translateY(-13px) rotate(-45deg);
+}
+
 .hamburger .hamburger__line {
   width: 50px;
   height: 3px;
@@ -40,25 +54,12 @@
   background-color: #BDAE82;
 }
 
-@media (min-width: 322px) and (max-width: 770px) {
+@media (max-width: 770px) {
   .hamburger {
     display: block;
+    position: relative;
+    z-index: 2;
   }
-}
-
-/* ONE */
-#hamburger-1.is-active .line:nth-child(2) {
-  opacity: 0;
-}
-
-#hamburger-1.is-active .line:nth-child(1) {
-  -webkit-transform: translateY(13px) rotate(45deg);
-          transform: translateY(13px) rotate(45deg);
-}
-
-#hamburger-1.is-active .line:nth-child(3) {
-  -webkit-transform: translateY(-13px) rotate(-45deg);
-          transform: translateY(-13px) rotate(-45deg);
 }
 
 .header-container-switch__button {
@@ -159,6 +160,7 @@ html {
 
 body {
   background-color: black;
+  overflow-x: hidden;
 }
 
 .container {
@@ -220,6 +222,7 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  overflow-x: hidden;
 }
 
 @media (max-width: 770px) {
@@ -252,8 +255,31 @@ header {
 
 @media (max-width: 770px) {
   .header-container__menu {
-    display: none;
+    font-family: "InterRegular", sans-serif;
+    font-size: 34px;
+    line-height: 72px;
+    width: 61%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: absolute;
+    top: -35px;
+    right: -100%;
+    padding-top: 134px;
+    padding-left: 127px;
+    background-color: black;
+    -webkit-transition: right 1s ease-out;
+    transition: right 1s ease-out;
   }
+}
+
+.header-container__menu-active {
+  right: 0;
 }
 
 .header-container__logo {
