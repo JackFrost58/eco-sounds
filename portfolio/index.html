@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./style.css">
     <link rel="icon" type="image/x-icon" href="./assets/img/favicon.ico">
     <title>Portfolio</title>
 </head>
@@ -17,29 +17,34 @@
                 </svg>
             </a>
             <div class="header-container__navbar">
-                <nav>
+                <nav class="header-container__navigation">
+                    <div class="hamburger">
+                        <span class="hamburger__line"></span>
+                        <span class="hamburger__line"></span>
+                        <span class="hamburger__line"></span>
+                    </div>
                     <ul class="header-container__menu">
-                        <li>
+                        <li class="header-container__item">
                             <a class="header-container__link" href="#skills">Skills</a> 
                         </li>
-                        <li>
+                        <li class="header-container__item">
                             <a class="header-container__link" href="#portfolio">Portfolio</a> 
                         </li>
-                        <li>
+                        <li class="header-container__item">
                             <a class="header-container__link" href="#video">Video</a> 
                         </li>
-                        <li>
+                        <li class="header-container__item">
                             <a class="header-container__link" href="#price">Price</a>
                         </li>
-                        <li>
+                        <li class="header-container__item">
                             <a class="header-container__link" href="#contact">Contacts</a>
                         </li>
                     </ul>
                 </nav>
                 <div class="header-container-switch">
-                    <button class="header-container-switch__button header-container-switch__button_checked">en </button>
+                    <button class="header-container-switch__button header-container-switch__button_checked">en  </button>
                     <span>/</span>  
-                    <button class="header-container-switch__button"> ru</button>
+                    <button class="header-container-switch__button">  ru</button>
                 </div>
             </div>
         </div>
@@ -50,8 +55,8 @@
                 <div class="hero-container__introduce">
                     <h1 class="hero-container__name">Alexa Rise</h1>
                     <span class="hero-container__text">
-                        Save sincere emotions, romantic feelings and <br> 
-                        happy moments of life together with professional<br>
+                        Save sincere emotions, romantic feelings and 
+                        happy moments of life together with professional
                         photographer Alexa Rise
                     </span>
                     <button class="button ">Hire me</button>
@@ -100,13 +105,13 @@
                 </div>
             </section>
             <section id="video" class="video-container">
-                <div class="container-title">
+                <div class="container-title video-container__title_bottom">
                     <h2 class="container-title__name">Video</h2>
                 </div>
                 <div class="video-container__player">
-                    <img src="./assets/img/video-player.jpg" alt="video-player">
+                    <img src="./assets/img/bg-descktop-video-player.jpg" alt="video-player" class="video-player">
                     <button class="video-container__button">
-                        <svg class="">
+                        <svg class="video-container__svg">
                             <use xlink:href="./assets/svg/sprite.svg#play-button"></use>
                         </svg>
                     </button>
@@ -161,7 +166,7 @@
                     <input type="email" placeholder="E-mail" class="contact-container__field">
                     <input type="tel" placeholder="Phone" class="contact-container__field">
                     <textarea class="contact-container__field contact-container__message" placeholder="Message"></textarea>
-                    <button class="button">Send message</button>
+                    <button class="button contact-container__button">Send message</button>
                 </form>                    
             </section>
         </div>    

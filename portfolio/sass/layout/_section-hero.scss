@@ -1,0 +1,48 @@
+.hero-container {
+  @include bg_header-hero("header-bg-desktop", -90px);  
+
+  @media (max-width: $tablet)  {
+    @include bg_header-hero("hero-bg-tablet", -90px);
+  }
+}
+
+.hero-container__introduce {
+  @include flex_block(column);
+  
+  padding: 160px 0 330px 80px;
+
+  @media (max-width: $tablet)  {
+    padding: 78px 60px 152px;
+  }
+}
+
+.hero-container__name {
+  @include font($font-MB, 60px, 120px);
+  
+  color: $text-color--white;
+
+  @media (max-width: $tablet)  {
+    @include font($font-MR, 32px, 64px);
+  }
+}
+  
+.hero-container__text {
+  width: 490px;
+  padding-top: 8px;
+  margin-bottom: 20px;
+  line-height: 42px;
+  color: $text-color--white;
+
+  @media (max-width: $tablet)  {
+    width: 390px;
+    line-height: 25px;
+    padding-top: 17px;
+    margin-bottom: 58px;
+  }
+
+  @media (max-width: $intermediate)  {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
+  
