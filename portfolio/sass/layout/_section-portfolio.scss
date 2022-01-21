@@ -1,0 +1,71 @@
+.portfolio-container__buttons {
+  @include flex_block(row);
+
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 60px;
+
+  @media (max-width: $tablet)  {
+    margin-bottom: 55px;
+    padding: 5px 50px 0;
+  }
+}
+  
+.portfolio-container__button {
+  @include size_block(220px, 55px);
+  @include font($font-IR, 20px, 20px);
+    
+  margin-right: 4px;
+  background-color: transparent;
+  border: 2px solid $text-color--main;
+  color: $text-color--main;
+  
+  &:hover {
+    color: $text-color--white;
+  }
+
+  @media (max-width: $tv-size) {
+    margin-bottom: 5px;
+  }
+
+  @media (max-width: $tablet)  {
+    margin-right: 5px;
+  }
+}
+  
+.portfolio-container__button_pressed {
+  background-color: $text-color--main;
+  color: $bg-color--black;
+}
+  
+.portfolio-container__images {
+  @include flex_block(row);
+  
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 92px;
+
+  @media (max-width: $tablet)  {
+    margin-bottom: 72px;
+  }
+}
+  
+.portfolio-container__image {
+  padding: 0 25px 25px 0;
+
+  &:nth-child(3n+3) {
+    padding-right: 0;
+  }
+
+  @media (max-width: $tv-size) {
+    padding-right: 25px;
+  }
+
+  @media (max-width: $tablet)  {
+    padding-right: 0;
+  }
+
+  @media (max-width: $intermediate)  {
+    width: 88%;
+  }
+}

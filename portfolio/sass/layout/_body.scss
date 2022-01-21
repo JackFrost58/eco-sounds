@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+  
+html {
+    scroll-behavior: smooth;
+}
+  
+body {
+    background-color: black;
+}
+
+.container {
+    @include font($font-IR, 20px, 20px);
+  
+    max-width: $desktop;
+    min-width: $mobile;
+    margin: 0 auto;
+    font-size: 20px;
+    background-color: black;
+
+}
