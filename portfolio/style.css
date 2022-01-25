@@ -245,7 +245,6 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  width: 470px;
   margin: 35px 0;
 }
 
@@ -547,7 +546,7 @@ header {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin: 0 20px;
-  padding-bottom: 109px;
+  padding-bottom: 79px;
 }
 
 @media (max-width: 1400px) {
@@ -572,6 +571,7 @@ header {
   padding: 90px 12px 20px;
   background-position: center top;
   background-repeat: no-repeat;
+  margin-bottom: 30px;
 }
 
 .skills-container__item:nth-child(1) {
@@ -900,13 +900,7 @@ header {
 }
 
 .price-container__button {
-  margin-bottom: 40px;
-}
-
-@media (max-width: 480px) {
-  .price-container__button {
-    margin: 0 auto;
-  }
+  margin: 0 auto 40px;
 }
 
 .contact-container {

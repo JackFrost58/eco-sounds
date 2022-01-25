@@ -40,7 +40,6 @@ header {
 .header-container__menu {
     @include flex_block(row);
    
-    width: 470px;
     margin: 35px 0;
 
     li {
