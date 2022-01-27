@@ -3,7 +3,7 @@
    
   text-align: center;
   margin: 0 auto 60px;
-  background-image: linear-gradient(to top, $bg-color--black 39px, $text-color--main 39px, $text-color--main 41px, $bg-color--black 41px);
+  background-image: linear-gradient(to top, $bg-color--transparent 39px, $text-color--main 39px, $text-color--main 41px, $bg-color--transparent 41px);
   color: $text-color--main;
 
   @media (max-width: $tablet)  {

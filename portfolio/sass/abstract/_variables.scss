@@ -10,6 +10,7 @@ $tv-size: 1400px;
 $text-color--main: #BDAE82;
 $text-color--white: white;
 $bg-color--black: black;
+$bg-color--transparent: transparent;
 
 @mixin size_block($width, $height) {
     width: $width;

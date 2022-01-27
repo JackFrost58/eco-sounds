@@ -33,7 +33,7 @@ header {
         @include size_block(50px, 50px);
         
         display: block;
-        order: 2;
+        order: 3;
     }
 }
   
@@ -115,3 +115,26 @@ header {
     }
 }
   
+.header-container__svg-icon{
+    @include size_block(45px, 45px);
+
+    fill: $text-color--white;
+    transition: 3s;
+
+    &:hover {
+        fill: $text-color--main;
+        transform: rotate(360deg);
+    }
+}
+
+.header-container__button {
+    @include size_block(45px, 45px);
+
+    background-color: transparent;
+    border: none;
+    margin-right: 30px;
+
+    @media (max-width: $tablet) {
+        order: 2;
+    }
+}

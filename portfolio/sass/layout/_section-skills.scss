@@ -79,4 +79,8 @@
         line-height: 25px; 
     }
 }
-  
+
+.active-theme {
+    background-color: $text-color--white;
+    color: $bg-color--black;
+}
