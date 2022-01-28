@@ -87,6 +87,23 @@ const i18Obj = {
   }
 }
 
-const LIST_CHANGE_BG_COLOR = ['container-title__name', 'skills-container__item-title', 'skills-container__item-text', 'price-container__card-description', 'price-container__card-title']
+const LIST_CHANGE_BG_COLOR = ['container-title__name', 
+                              'skills-container__item-title', 
+                              'skills-container__item-text', 
+                              'price-container__card-description', 
+                              'price-container__card-title', 
+                              'portfolio-container__button', 
+                              'header-container__menu-active',
+                              'footer-container',
+                              'rs-link',
+                              'footer-container__image',
+                              'link']
+const ITEM_CHANGE_BG_IMAGE = 'container-title';
+const ALT_IMAGES = {
+  'winter': ['snow-house', 'child', 'street', 'girl', 'village', 'family'],
+  'spring': ['lake', 'child', 'sun', 'couple', 'coast', 'old-man'],
+  'summer': ['girl', 'cows', 'family', 'nature', 'dog', 'dandelions'],
+  'autumn': ['couple', 'horse', 'child', 'trees', 'old-mans', 'phone']
+}
 
-export {i18Obj, LIST_CHANGE_BG_COLOR} ;
+export {i18Obj, LIST_CHANGE_BG_COLOR, ITEM_CHANGE_BG_IMAGE, ALT_IMAGES} ;

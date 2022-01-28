@@ -151,6 +151,10 @@
   }
 }
 
+.active-theme-line {
+  background-image: linear-gradient(to top, transparent 39px, black 39px, black 41px, transparent 41px);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -666,6 +670,7 @@ header {
 .active-theme {
   background-color: white;
   color: black;
+  fill: black;
 }
 
 .portfolio-container__buttons {
@@ -704,6 +709,7 @@ header {
 }
 
 .portfolio-container__button:hover {
+  background-color: #BDAE82;
   color: white;
 }
 
@@ -720,8 +726,8 @@ header {
 }
 
 .portfolio-container__button_pressed {
-  background-color: #BDAE82;
-  color: black;
+  background-color: #BDAE82 !important;
+  color: white !important;
 }
 
 .portfolio-container__images {

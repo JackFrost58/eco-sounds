@@ -20,7 +20,8 @@
   border: 2px solid $text-color--main;
   color: $text-color--main;
   
-  &:hover {
+  &:hover { 
+    background-color: $text-color--main;
     color: $text-color--white;
   }
 
@@ -32,10 +33,10 @@
     margin-right: 5px;
   }
 }
-  
+
 .portfolio-container__button_pressed {
-  background-color: $text-color--main;
-  color: $bg-color--black;
+  background-color: $text-color--main !important;
+  color: $text-color--white !important;
 }
   
 .portfolio-container__images {

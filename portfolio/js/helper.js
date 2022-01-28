@@ -1,4 +1,14 @@
-import {i18Obj, LIST_CHANGE_BG_COLOR } from "./translate.js";
+import {i18Obj, ITEM_CHANGE_BG_IMAGE, LIST_CHANGE_BG_COLOR, ALT_IMAGES } from "./translate.js";
+
+function changeActiveButton(currentButton, nameClassActiveButton) {
+    const activeButton = document.querySelector('.' + nameClassActiveButton);
+    
+    if(!currentButton.classList.contains(nameClassActiveButton)){
+        activeButton.classList.remove(nameClassActiveButton);
+        currentButton.classList.add(nameClassActiveButton);
+    }
+}
+
 
 function getTranslate(language) {
     const items = document.querySelectorAll('[data-i18]');
@@ -14,13 +24,10 @@ function getTranslate(language) {
 }
 
 function changeLang(event){
-    const activeButton = document.querySelector('.header-container-switch__button_checked');
+    const currentButton = event.target;
+    const nameClassActiveButton = 'header-container-switch__button_checked';
    
-    if(!event.target.classList.contains('header-container-switch__button_checked')){
-        event.target.classList.add('header-container-switch__button_checked');
-        activeButton.classList.remove('header-container-switch__button_checked');
-    } 
-
+    changeActiveButton(currentButton, nameClassActiveButton);
     getTranslate(event.target.innerHTML);
 }
 
@@ -37,6 +44,8 @@ function closeMenu(event) {
 function changeTheme(event) {
     const body = document.body;
     const icon = document.querySelector('.header-container__svg-icon');
+    const lines = document.querySelectorAll('.' + ITEM_CHANGE_BG_IMAGE);
+    
     body.classList.toggle('active-theme');
 
     if(body.classList.length === 1) {
@@ -45,7 +54,6 @@ function changeTheme(event) {
         icon.children[0].setAttribute('href', './assets/svg/sprite.svg#sun');
     }
     
-
     LIST_CHANGE_BG_COLOR.forEach((element) => {
         let items = document.querySelectorAll('.' + element);
     
@@ -54,6 +62,29 @@ function changeTheme(event) {
         })
         
     })
+
+    lines.forEach((element) => {
+        element.classList.toggle('active-theme-line');
+    });
 }
 
-export {getTranslate, changeLang, closeMenu, changeTheme}
+function changePhotos(event) {
+    
+    const currentButton = event.target;
+    const nameClassActiveButton = 'portfolio-container__button_pressed';
+    const namePhotoBlock = currentButton.dataset.season;
+    const imageContainer = document.querySelector('.portfolio-container__images');
+    
+    if(currentButton.classList.contains('portfolio-container__button')){
+        changeActiveButton(currentButton, nameClassActiveButton);
+        
+        const arrayImage = Array.from(imageContainer.children)
+    
+        arrayImage.forEach((element, index) => {
+            element.setAttribute('src', './assets/img/' + namePhotoBlock.toLowerCase() + '/portfolio-img_' + (index + 1) + '.jpg');
+            element.alt = ALT_IMAGES[namePhotoBlock][index]
+        })
+    }
+}
+
+export {getTranslate, changeLang, closeMenu, changeTheme, changePhotos}
