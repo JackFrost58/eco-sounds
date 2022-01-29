@@ -1,4 +1,4 @@
-import {closeMenu, changeLang, changeTheme, changePhotos} from './helper.js';
+import {closeMenu, changeLang, changeTheme, changePhotos, setLocalStorage, getLocalStorage} from './helper.js';
 
 
 const hamburger = document.querySelector('.hamburger');
@@ -13,4 +13,6 @@ buttonSwitch.addEventListener('click', changeLang);
 buttonTheme.addEventListener('click', changeTheme);
 buttonsSeasons.addEventListener('click', changePhotos)
 
+window.addEventListener('beforeunload', setLocalStorage);
+window.addEventListener('load', getLocalStorage)
 //console.log(" Оценка: 85/75 \n 1. Верстка соответствует макету +48 \n 2. Ни на одном из разрешений до 320px включительно не появляется горизонтальная полоса прокрутки +15 \n 3. На ширине экрана 768рх и меньше реализовано адаптивное меню +22")

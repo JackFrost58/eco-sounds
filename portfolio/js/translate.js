@@ -87,17 +87,7 @@ const i18Obj = {
   }
 }
 
-const LIST_CHANGE_BG_COLOR = ['container-title__name', 
-                              'skills-container__item-title', 
-                              'skills-container__item-text', 
-                              'price-container__card-description', 
-                              'price-container__card-title', 
-                              'portfolio-container__button', 
-                              'header-container__menu-active',
-                              'footer-container',
-                              'rs-link',
-                              'footer-container__image',
-                              'link']
+const LIST_CHANGE_BG_COLOR = ['container-title__name', 'skills-container__item-title', 'skills-container__item-text', 'price-container__card-description', 'price-container__card-title', 'portfolio-container__button', 'header-container__menu-active', 'footer-container', 'rs-link', 'footer-container__image', 'link']
 const ITEM_CHANGE_BG_IMAGE = 'container-title';
 const ALT_IMAGES = {
   'winter': ['snow-house', 'child', 'street', 'girl', 'village', 'family'],
