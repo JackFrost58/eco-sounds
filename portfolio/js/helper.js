@@ -1,4 +1,4 @@
-import {i18Obj, ITEM_CHANGE_BG_IMAGE, LIST_CHANGE_BG_COLOR, ALT_IMAGES } from "./translate.js";
+import {i18Obj, ITEM_CHANGE_BG_IMAGE, LIST_CHANGE_BG_COLOR, ALT_IMAGES } from "./variables.js";
 
 function changeActiveButton(currentButton, nameClassActiveButton) {
     const activeButton = document.querySelector('.' + nameClassActiveButton);
