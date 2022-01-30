@@ -62,7 +62,7 @@ header {
         padding-top: 134px;
         padding-left: 127px;
         background-color: $bg-color--black;
-        transition: right 1s ease-out;
+        transition: right 0.5s ease-out;
     }
 
     @media (max-width: 620px) {
@@ -137,4 +137,8 @@ header {
     @media (max-width: $tablet) {
         order: 2;
     }
+}
+
+.active-light {
+    background-color: $text-color--white;
 }

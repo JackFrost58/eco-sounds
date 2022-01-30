@@ -48,6 +48,10 @@
   transition: all 0.3s ease-in-out;
 }
 
+.hamburger .active-light {
+  background-color: black;
+}
+
 .hamburger:hover {
   cursor: pointer;
 }
@@ -279,8 +283,8 @@ header {
     padding-top: 134px;
     padding-left: 127px;
     background-color: black;
-    -webkit-transition: right 1s ease-out;
-    transition: right 1s ease-out;
+    -webkit-transition: right 0.5s ease-out;
+    transition: right 0.5s ease-out;
   }
 }
 
@@ -376,6 +380,10 @@ header {
         -ms-flex-order: 2;
             order: 2;
   }
+}
+
+.active-light {
+  background-color: white;
 }
 
 .footer-container {

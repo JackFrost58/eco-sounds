@@ -5,8 +5,12 @@ const hamburger = document.querySelector('.hamburger');
 const buttonSwitch = document.querySelector('.header-container-switch');
 const navLinks = document.querySelector('.header-container__menu');
 const buttonTheme = document.querySelector('.header-container__button');
-const buttonsSeasons = document.querySelector('.portfolio-container__buttons')
+const buttonsSeasons = document.querySelector('.portfolio-container__buttons');
 
+// if(document.body.offsetWidth > 770) {
+//     closeMenu();
+// }
+console.log(document.body.offsetWidth)
 hamburger.addEventListener('click', closeMenu);
 navLinks.addEventListener('click', closeMenu);
 buttonSwitch.addEventListener('click', changeLang);
