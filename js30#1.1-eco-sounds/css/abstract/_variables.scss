@@ -1,0 +1,6 @@
+$color-text--main: #FFFFFF; 
+
+@mixin size_block($width, $height) {
+    width: $width;
+    height: $height;
+}
