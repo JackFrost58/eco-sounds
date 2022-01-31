@@ -1,19 +1,24 @@
-const navLinks = document.querySelector(".header-container__menu");
-const hamburger = document.querySelector(".hamburger");
-const hamburgerElements = document.querySelectorAll(".hamburger__line");
+import {closeMenu, changeLang, changeTheme, changePhotos, setLocalStorage, getLocalStorage, switchThemeLinks} from './helper.js';
 
 
-hamburger.addEventListener("click", closeMenu);
-navLinks.addEventListener("click", closeMenu);
+const hamburger = document.querySelector('.hamburger');
+const buttonSwitch = document.querySelector('.header-container-switch');
+const navLinks = document.querySelector('.header-container__menu');
+const buttonTheme = document.querySelector('.header-container__button');
+const buttonsSeasons = document.querySelector('.portfolio-container__buttons');
+const body = document.body
+
+hamburger.addEventListener('click', closeMenu);
+navLinks.addEventListener('click', closeMenu);
+buttonSwitch.addEventListener('click', changeLang);
+buttonTheme.addEventListener('click', changeTheme);
+buttonsSeasons.addEventListener('click', changePhotos)
+body.addEventListener('mousemove', () => {
+    if(window.innerWidth > 770) switchThemeLinks('remove');
+})
 
 
-function closeMenu(event) {
-    navLinks.classList.toggle("header-container__menu-active");
-    hamburgerElements.forEach((element) => {
-        element.classList.toggle('active');
-    })
-}
+window.addEventListener('beforeunload', setLocalStorage);
+window.addEventListener('load', getLocalStorage);
 
-
-
-console.log(" Оценка: 85/75 \n 1. Верстка соответствует макету +48 \n 2. Ни на одном из разрешений до 320px включительно не появляется горизонтальная полоса прокрутки +15 \n 3. На ширине экрана 768рх и меньше реализовано адаптивное меню +22")
+console.log(" Оценка: 85/75 \n 1. Смена изображений в секции portfolio +25 \n 2. Перевод страницы на два языка +25 \n 3. Переключение светлой и тёмной темы +25 \n 4. Дополнительный функционал: выбранный пользователем язык отображения страницы и светлая или тёмная тема сохраняются при перезагрузке страницы +5 \n 5. Дополнительный функционал: сложные эффекты для кнопок при наведении и/или клике +5");

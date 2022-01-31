@@ -77,9 +77,10 @@
 }
 
 .price-container__button {
-    margin-bottom: 40px;
+    margin: 0 auto 40px;
+}
 
-    @media (max-width: $intermediate)  {
-        margin: 0 auto;
-    }
+.active-theme {
+    background-color: $text-color--white;
+    color: $bg-color--black;
 }
