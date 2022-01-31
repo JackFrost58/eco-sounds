@@ -4,6 +4,7 @@
     justify-content: space-between;
     padding: 63px 0;
     color: $text-color--white;
+    background-color: $bg-color--black;
 
     @media (max-width: $tablet)  {
         @include flex_block(column);

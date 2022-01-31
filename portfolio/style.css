@@ -48,6 +48,10 @@
   transition: all 0.3s ease-in-out;
 }
 
+.hamburger .active-light {
+  background-color: black;
+}
+
 .hamburger:hover {
   cursor: pointer;
 }
@@ -88,17 +92,20 @@
   font-family: "InterRegular", sans-serif;
   font-size: 20px;
   line-height: 20px;
-  background: #BDAE82;
-  border: none;
+  background: transparent;
+  border: 2px solid #BDAE82;
   cursor: pointer;
   -webkit-transition: 1s;
   transition: 1s;
+  color: #BDAE82;
 }
 
 .button:hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
   color: white;
+  -webkit-box-shadow: inset 0 0 0 2em #BDAE82;
+          box-shadow: inset 0 0 0 2em #BDAE82;
 }
 
 @media (max-width: 770px) {
@@ -124,7 +131,7 @@
   height: 63px;
   text-align: center;
   margin: 0 auto 60px;
-  background-image: linear-gradient(to top, black 39px, #BDAE82 39px, #BDAE82 41px, black 41px);
+  background-image: linear-gradient(to top, transparent 39px, #BDAE82 39px, #BDAE82 41px, transparent 41px);
   color: #BDAE82;
 }
 
@@ -151,6 +158,10 @@
   }
 }
 
+.active-theme-line {
+  background-image: linear-gradient(to top, transparent 39px, black 39px, black 41px, transparent 41px);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -158,6 +169,7 @@
 
 html {
   scroll-behavior: smooth;
+  cursor: pointer;
 }
 
 body {
@@ -172,7 +184,6 @@ body {
   min-width: 318px;
   margin: 0 auto;
   font-size: 20px;
-  background-color: black;
 }
 
 header {
@@ -231,9 +242,9 @@ header {
     width: 50px;
     height: 50px;
     display: block;
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
   }
 }
 
@@ -245,7 +256,6 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  width: 470px;
   margin: 35px 0;
 }
 
@@ -277,8 +287,8 @@ header {
     padding-top: 134px;
     padding-left: 127px;
     background-color: black;
-    -webkit-transition: right 1s ease-out;
-    transition: right 1s ease-out;
+    -webkit-transition: right 0.5s ease-out;
+    transition: right 0.5s ease-out;
   }
 }
 
@@ -346,6 +356,40 @@ header {
   }
 }
 
+.header-container__svg-icon {
+  width: 45px;
+  height: 45px;
+  fill: white;
+  -webkit-transition: 3s;
+  transition: 3s;
+}
+
+.header-container__svg-icon:hover {
+  fill: #BDAE82;
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+.header-container__button {
+  width: 45px;
+  height: 45px;
+  background-color: transparent;
+  border: none;
+  margin-right: 30px;
+}
+
+@media (max-width: 770px) {
+  .header-container__button {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+}
+
+.active-light {
+  background-color: white;
+}
+
 .footer-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -359,6 +403,7 @@ header {
           justify-content: space-between;
   padding: 63px 0;
   color: white;
+  background-color: black;
 }
 
 @media (max-width: 770px) {
@@ -547,7 +592,7 @@ header {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin: 0 20px;
-  padding-bottom: 109px;
+  padding-bottom: 79px;
 }
 
 @media (max-width: 1400px) {
@@ -572,6 +617,7 @@ header {
   padding: 90px 12px 20px;
   background-position: center top;
   background-repeat: no-repeat;
+  margin-bottom: 30px;
 }
 
 .skills-container__item:nth-child(1) {
@@ -633,6 +679,12 @@ header {
   }
 }
 
+.active-theme {
+  background-color: white;
+  color: black;
+  fill: black;
+}
+
 .portfolio-container__buttons {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -669,7 +721,12 @@ header {
 }
 
 .portfolio-container__button:hover {
+  background-color: #BDAE82;
   color: white;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-box-shadow: inset 0 0 0 2em #BDAE82;
+          box-shadow: inset 0 0 0 2em #BDAE82;
 }
 
 @media (max-width: 1400px) {
@@ -685,8 +742,8 @@ header {
 }
 
 .portfolio-container__button_pressed {
-  background-color: #BDAE82;
-  color: black;
+  background-color: #BDAE82 !important;
+  color: white !important;
 }
 
 .portfolio-container__images {
@@ -900,13 +957,12 @@ header {
 }
 
 .price-container__button {
-  margin-bottom: 40px;
+  margin: 0 auto 40px;
 }
 
-@media (max-width: 480px) {
-  .price-container__button {
-    margin: 0 auto;
-  }
+.active-theme {
+  background-color: white;
+  color: black;
 }
 
 .contact-container {
