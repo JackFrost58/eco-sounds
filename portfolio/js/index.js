@@ -1,4 +1,4 @@
-import {closeMenu, changeLang, changeTheme, changePhotos, setLocalStorage, getLocalStorage} from './helper.js';
+import {closeMenu, changeLang, changeTheme, changePhotos, setLocalStorage, getLocalStorage, switchThemeLinks} from './helper.js';
 
 
 const hamburger = document.querySelector('.hamburger');
@@ -6,12 +6,17 @@ const buttonSwitch = document.querySelector('.header-container-switch');
 const navLinks = document.querySelector('.header-container__menu');
 const buttonTheme = document.querySelector('.header-container__button');
 const buttonsSeasons = document.querySelector('.portfolio-container__buttons');
+const body = document.body
 
 hamburger.addEventListener('click', closeMenu);
 navLinks.addEventListener('click', closeMenu);
 buttonSwitch.addEventListener('click', changeLang);
 buttonTheme.addEventListener('click', changeTheme);
 buttonsSeasons.addEventListener('click', changePhotos)
+body.addEventListener('mousemove', () => {
+    if(window.innerWidth > 770) switchThemeLinks('remove');
+})
+
 
 window.addEventListener('beforeunload', setLocalStorage);
 window.addEventListener('load', getLocalStorage);

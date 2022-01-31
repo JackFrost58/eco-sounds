@@ -98,17 +98,15 @@ function changeLang(event){
     
 }
 
-function switchThemeNavbar(hamburgerElements, navLinks) {
-    let listNavLinks = document.querySelectorAll('.header-container__link')
+function switchThemeLinks(method) {
+    let listNavLinks = document.querySelectorAll('.header-container__link');
+    const navContainer = document.querySelector('.header-container__menu');
 
-    navLinks.classList.toggle('active-light')
-
-    hamburgerElements.forEach((element) => {
-        element.classList.toggle('active-light');
-    })
+    console.log('word');
+    navContainer.classList[method]('active-light')
 
     listNavLinks.forEach((element) => {
-         element.classList.toggle('active-theme');
+         element.classList[method]('active-theme');
      })
 }
 
@@ -123,7 +121,13 @@ function closeMenu(event) {
     })
 
     if(body.classList.contains('active-theme')) {
-        switchThemeNavbar(hamburgerElements, navContainer)
+        hamburgerElements.forEach((element) => {
+            element.classList.toggle('active-light');
+        })
+
+        switchThemeLinks('add')
+    } else {
+        switchThemeLinks('remove')
     }
    
 }
@@ -159,4 +163,4 @@ function changePhotos(event) {
     }
 }
 
-export {getTranslate, changeLang, closeMenu, changeTheme, changePhotos, getLocalStorage, setLocalStorage}
+export {getTranslate, changeLang, closeMenu, changeTheme, changePhotos, getLocalStorage, setLocalStorage, switchThemeLinks}
