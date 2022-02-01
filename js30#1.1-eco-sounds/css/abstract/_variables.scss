@@ -2,6 +2,8 @@ $color--main: #bdae82;
 $color--white: #FFFFFF;
 $font-IR: "InterRegular", sans-serif;
 $font-IB: "InterBold", sans-serif;
+$tablet: 770px;
+$desktop: 1440px;
 
 @mixin size_block($width, $height) {
     width: $width;

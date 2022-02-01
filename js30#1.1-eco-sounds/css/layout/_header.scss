@@ -1,0 +1,20 @@
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (max-width: $tablet) {
+        flex-direction: column;
+    }
+}
+
+.header__icon {
+    @include size_block(50px, 50px);
+}
+
+.list-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}

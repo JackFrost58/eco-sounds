@@ -4,6 +4,7 @@
     text-decoration: none;
     color: $color--white;
     cursor: pointer;
+    transition: 1s;
 
     &:hover {
         color: $color--main;

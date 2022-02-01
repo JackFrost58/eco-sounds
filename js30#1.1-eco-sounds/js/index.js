@@ -1,3 +1,3 @@
-import nameButtons from "./variables.js";
+import { createButton } from "./helper.js";
 
-console.log(nameButtons);
+createButton()

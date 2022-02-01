@@ -1,6 +1,26 @@
 .button {
-    @include size_block(50px, 50px);
+    @include size_block(150px, 50px);
+    @include font($font-IR);
 
-    background-color: red;
+    margin: 10px;
+    background-color: transparent;
+    border: 2px solid $color--main;
+    cursor: pointer;
+    transition: 1s;
     color: $color--main;
+
+    &:hover {
+        transform: scale(1.2);
+        color: $color--white;
+        box-shadow: inset 0 0 0 2em $color--main;
+    }
+
+    @media (max-width: $tablet)  {
+        height: 57px;
+    }
+}
+
+.button_pressed {
+    background-color: $color--main;
+    color: $color--white;
 }
