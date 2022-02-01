@@ -1,6 +1,14 @@
-$color-text--main: #FFFFFF; 
+$color--main: #bdae82; 
+$color--white: #FFFFFF;
+$font-IR: "InterRegular", sans-serif;
+$font-IB: "InterBold", sans-serif;
 
 @mixin size_block($width, $height) {
     width: $width;
     height: $height;
+}
+
+@mixin font ($font) {
+    font-family: $font;
+    font-size: 20px;
 }

@@ -1,0 +1,11 @@
+.link {
+    @include font($font-IR);
+
+    text-decoration: none;
+    color: $color--white;
+    cursor: pointer;
+
+    &:hover {
+        color: $color--main;
+    }
+}

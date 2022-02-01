@@ -1,0 +1,9 @@
+.icon {
+    @include size_block(150px, 50px);
+    
+    fill: $color--white;
+
+    &:hover {
+        fill: $color--main;
+    }
+}

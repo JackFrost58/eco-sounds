@@ -1,0 +1,13 @@
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-container__text {
+    @include font($font-IR);
+
+    margin: 10px;
+    color: $color--white;
+}
