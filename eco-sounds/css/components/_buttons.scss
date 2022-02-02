@@ -24,3 +24,12 @@
     background-color: $color--main;
     color: $color--white;
 }
+
+.button-play {
+    @include size_block(50px, 50px);
+
+    padding: 0;
+    border: transparent;
+    background-color: transparent;
+    cursor: pointer;
+}
