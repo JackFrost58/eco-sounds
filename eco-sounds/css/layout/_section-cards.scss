@@ -1,6 +1,8 @@
 .cards-container {
     display: flex;
     justify-content: center;
+    margin-bottom: 30px;
+    background-image: url(../assets/img/forest.jpg);
 }
 
 .cards-container__card {
@@ -8,12 +10,20 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    margin: 35px;
+    padding: 15px;
     border:  2px solid $color--main;
     transition: 1s;
+    background-color: rgba($color: $color--black, $alpha: 0.7);
 
     &:hover {
         transform: scale(1.1);
+    }
+
+    @media (max-width: $mobile) {
+        &:hover {
+            transform: none
+        }
     }
 }
 
@@ -25,6 +35,12 @@
 
     &:hover {
         transform: scale(1.5);
+    }
+
+    @media (max-width: $mobile) {
+        &:hover {
+            transform: none
+        }
     }
 }
 

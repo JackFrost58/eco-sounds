@@ -3,6 +3,11 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+
+    @media (max-width: $mobile) {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
 }
 
 .footer-container__text {

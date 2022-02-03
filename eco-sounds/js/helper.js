@@ -8,6 +8,7 @@ function createButtons() {
 
         button.className = 'button';
         button.innerHTML = element;
+        button.addEventListener('click', changeCard)
         listButtons.appendChild(button);
     });
 }
@@ -19,9 +20,11 @@ function changeCard(event) {
         const containerCards = document.querySelector('.cards-container');
         const nameBird = event.target.innerHTML;
 
+        switchBackground(nameBird);
         changeActiveButton(button, 'button_pressed');
         removeCard(containerCards);
         containerCards.appendChild(createCard(nameBird));
+        playSong();
     }
 }
 
@@ -170,6 +173,20 @@ function changeActiveButton(currentButton, nameClassActiveButton) {
         
         currentButton.classList.add(nameClassActiveButton);
     }
+}
+
+function setMainImage(){
+    const cardContainer = document.querySelector('.cards-container');
+
+    cardContainer.appendChild();
+}
+
+function switchBackground(nameBird) {
+    const section = document.querySelector('.cards-container');
+    const translateBird = TRANSLATE_NAME_BIRDS[nameBird];
+    //console.log('section', `url(./assets/img/${translateBird})`);
+
+    section.style.backgroundImage = `url(assets/img/${translateBird}/${translateBird}.jpg)`
 }
 
 export {createButtons, changeCard};
