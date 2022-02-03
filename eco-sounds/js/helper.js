@@ -19,6 +19,7 @@ function changeCard(event) {
         const containerCards = document.querySelector('.cards-container');
         const nameBird = event.target.innerHTML;
 
+        changeActiveButton(button, 'button_pressed');
         removeCard(containerCards);
         containerCards.appendChild(createCard(nameBird));
     }
@@ -42,6 +43,7 @@ function createCard(nameBird) {
     containerCard.appendChild(createTitle('Больше информации на'));
     containerCard.appendChild(createLink(nameBird));
     containerCard.appendChild(createTitle('Пение'));
+    containerCard.appendChild(createAudio(nameBird));
     containerCard.appendChild(createSongButton());
 
     return containerCard;
@@ -105,7 +107,69 @@ function createSongButton() {
     button.className = 'button-play';
     button.innerHTML = nameSvg;
 
+    button.addEventListener('click', playSong);
+
     return button;
+}
+
+function createAudio(nameBird) {
+    const elemAudio = createElement('audio');
+    const translateBird = TRANSLATE_NAME_BIRDS[nameBird]
+    
+    elemAudio.src = './assets/audio/' + translateBird + '.mp3';
+
+    return elemAudio;
+}
+
+function playSong() {
+    const elemAudio = document.querySelector('audio');
+    switchIconButton();
+
+    const state = getStateButton();
+
+    if(state === 'play') {
+        elemAudio.currentTime = 0;
+        elemAudio.play()
+    } else {
+        elemAudio.pause();
+    }
+}
+
+function switchIconButton() {
+    const svg = document.querySelector('.icon-button');
+    const svgUse = svg.children[0];
+    const hrefSvg = svgUse.href.baseVal;
+    const regex = new RegExp('play')
+    
+    if(regex.test(hrefSvg)){
+        svgUse.setAttribute('xlink:href', './assets/svg/sprite.svg#pause');
+        saveStateButton('play')
+    } else {
+        svgUse.setAttribute('xlink:href', './assets/svg/sprite.svg#play')
+        saveStateButton('pause');
+    }
+}
+
+function saveStateButton(state) {
+    localStorage.setItem('state-button', state);
+}
+
+function getStateButton() {
+    const stateButtonPlay = localStorage.getItem('state-button');
+
+    return stateButtonPlay; 
+}
+
+function changeActiveButton(currentButton, nameClassActiveButton) {  
+    if(!currentButton.classList.contains(nameClassActiveButton)){
+        const activeButton = document.querySelector('.' + nameClassActiveButton);
+
+        if(activeButton) {
+            activeButton.classList.remove(nameClassActiveButton);
+        }
+        
+        currentButton.classList.add(nameClassActiveButton);
+    }
 }
 
 export {createButtons, changeCard};
