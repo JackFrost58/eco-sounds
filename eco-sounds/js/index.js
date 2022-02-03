@@ -1,3 +1,7 @@
-import { createButton } from "./helper.js";
+import { createButtons, changeCard } from "./helper.js";
 
-createButton()
+const listButtons = document.querySelector('.list-buttons');
+
+createButtons()
+
+listButtons.addEventListener('click', changeCard);

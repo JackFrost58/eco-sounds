@@ -220,13 +220,6 @@ header {
   }
 }
 
-.cards-container__name {
-  font-family: "InterBold", sans-serif;
-  font-size: 20px;
-  margin-bottom: 10px;
-  color: #bdae82;
-}
-
 .cads-container__description-text {
   margin: 5px 0;
 }
