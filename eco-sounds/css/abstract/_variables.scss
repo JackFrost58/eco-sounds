@@ -12,7 +12,7 @@ $mobile: 380px;
     height: $height;
 }
 
-@mixin font ($font) {
+@mixin font ($font, $size) {
     font-family: $font;
-    font-size: 20px;
+    font-size: $size;
 }

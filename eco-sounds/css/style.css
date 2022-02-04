@@ -70,7 +70,10 @@
 
 @media (max-width: 940px) {
   .button {
+    width: 100px;
     height: 57px;
+    font-family: "InterRegular", sans-serif;
+    font-size: 15px;
   }
 }
 
@@ -103,9 +106,8 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -141,6 +143,7 @@ header {
 .header__title {
   position: relative;
   color: #0e3742;
+  margin: 5px 0;
   text-transform: uppercase;
   text-align: center;
   -webkit-box-reflect: below -40px linear-gradient(transparent, #0004);
@@ -191,6 +194,7 @@ header {
           align-items: center;
   margin-bottom: 3px;
   background-image: url(../assets/img/forest/forest.jpg);
+  background-repeat: no-repeat;
 }
 
 .cards-container__card {
@@ -327,5 +331,6 @@ header {
   font-size: 20px;
   margin: 10px;
   color: #FFFFFF;
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */

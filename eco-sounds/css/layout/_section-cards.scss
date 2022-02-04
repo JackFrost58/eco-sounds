@@ -5,6 +5,7 @@
     align-items: center;
     margin-bottom: 3px;
     background-image: url(../assets/img/forest/forest.jpg);
+    background-repeat: no-repeat;
 }
 
 .cards-container__card {
@@ -49,7 +50,7 @@
 }
 
 .cards-container__description {
-    @include font($font-IR);
+    @include font($font-IR, 20px);
 
     display: flex;
     flex-direction: column;
@@ -63,7 +64,7 @@
 }
 
 .cards-container__text{
-    @include font($font-IB);
+    @include font($font-IB, 20px);
 
     margin: 10px 0;
     color: $color--main;

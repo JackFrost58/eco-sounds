@@ -1,6 +1,6 @@
 .button {
     @include size_block(150px, 50px);
-    @include font($font-IR);
+    @include font($font-IR, 20px);
 
     margin: 10px;
     background-color: transparent;
@@ -16,7 +16,8 @@
     }
 
     @media (max-width: $tablet)  {
-        height: 57px;
+        @include size_block(100px, 57px);
+        @include font($font-IR, 15px);
     }
 }
 

@@ -1,5 +1,5 @@
 .link {
-    @include font($font-IR);
+    @include font($font-IR, 20px);
 
     text-decoration: none;
     color: $color--white;
