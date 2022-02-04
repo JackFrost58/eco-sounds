@@ -138,6 +138,46 @@ header {
           justify-content: center;
 }
 
+.header__title {
+  position: relative;
+  color: #0e3742;
+  text-transform: uppercase;
+  text-align: center;
+  -webkit-box-reflect: below -40px linear-gradient(transparent, #0004);
+}
+
+.header__title span {
+  -webkit-animation: animate 5s linear infinite;
+          animation: animate 5s linear infinite;
+}
+
+.header__title span:nth-child(even) {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+
+@-webkit-keyframes animate {
+  0%, 18%, 20%, 50.1%, 60%, 65.1%, 80%, 90.1%, 92% {
+    color: #0e3742;
+    text-shadow: none;
+  }
+  18.1%, 20.1%, 30%, 50%, 60.1%, 65%, 80.1%, 90%, 92.1%, 100% {
+    color: #FFFFFF;
+    text-shadow: 0 0 10px #bdae82, 0 0 20px #bdae82, 0 0 40px #bdae82, 0 0 80px #bdae82, 0 0 160px #bdae82, 0 0 400px #bdae82;
+  }
+}
+
+@keyframes animate {
+  0%, 18%, 20%, 50.1%, 60%, 65.1%, 80%, 90.1%, 92% {
+    color: #0e3742;
+    text-shadow: none;
+  }
+  18.1%, 20.1%, 30%, 50%, 60.1%, 65%, 80.1%, 90%, 92.1%, 100% {
+    color: #FFFFFF;
+    text-shadow: 0 0 10px #bdae82, 0 0 20px #bdae82, 0 0 40px #bdae82, 0 0 80px #bdae82, 0 0 160px #bdae82, 0 0 400px #bdae82;
+  }
+}
+
 .cards-container {
   height: 800px;
   display: -webkit-box;
