@@ -9,8 +9,10 @@ header {
     }
 }
 
-.header__icon {
+.logo {
     @include size_block(50px, 50px);
+
+    cursor: pointer;
 }
 
 .list-buttons {
@@ -18,3 +20,4 @@ header {
     flex-wrap: wrap;
     justify-content: center;
 }
+

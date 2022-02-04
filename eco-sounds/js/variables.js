@@ -51,12 +51,13 @@ const LIST_LINKS_BIRDS = {
     'Славка': 'https://ru.wikipedia.org/wiki/%D0%A1%D0%BB%D0%B0%D0%B2%D0%BA%D0%B8'
 }
 
-const TRANSLATE_NAME_BIRDS = {
+const TRANSLATE_NAME = {
     'Соловей': 'solovey',
     'Дрозд': 'drozd',
     'Малиновка': 'zarynka',
     'Жаворонок': 'javoronok',
-    'Славка': 'slavka'
+    'Славка': 'slavka',
+    'Лес': 'forest'
 }
 
-export {ARRAY_NAME_BIRDS, DESCRIPTION_BIRDS, LIST_LINKS_BIRDS, TRANSLATE_NAME_BIRDS} 
+export {ARRAY_NAME_BIRDS, DESCRIPTION_BIRDS, LIST_LINKS_BIRDS, TRANSLATE_NAME} 

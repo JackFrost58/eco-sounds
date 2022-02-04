@@ -1,4 +1,4 @@
-import { DESCRIPTION_BIRDS, LIST_LINKS_BIRDS, ARRAY_NAME_BIRDS, TRANSLATE_NAME_BIRDS } from "./variables.js";
+import { DESCRIPTION_BIRDS, LIST_LINKS_BIRDS, ARRAY_NAME_BIRDS, TRANSLATE_NAME } from "./variables.js";
 
 function createButtons() {
     const listButtons = document.querySelector('.list-buttons');
@@ -8,7 +8,17 @@ function createButtons() {
 
         button.className = 'button';
         button.innerHTML = element;
-        button.addEventListener('click', changeCard)
+        button.addEventListener('mousedown', changeCard);
+        button.addEventListener('mouseup', () => {
+            const card = document.querySelector('.cards-container__card');
+
+            if(!card.classList.contains('show')){
+                card.classList.add('show');
+              } else {
+                card.classList.remove('show');
+            }
+        })
+
         listButtons.appendChild(button);
     });
 }
@@ -29,8 +39,10 @@ function changeCard(event) {
 }
 
 function removeCard(parent) {
-    const child = document.querySelector('.cards-container__card');
+    const child = parent.children[0];
+
     if(child){
+        child.classList.remove('show');
         parent.removeChild(child);
     }
 }
@@ -46,8 +58,7 @@ function createCard(nameBird) {
     containerCard.appendChild(createTitle('Больше информации на'));
     containerCard.appendChild(createLink(nameBird));
     containerCard.appendChild(createTitle('Пение'));
-    containerCard.appendChild(createAudio(nameBird));
-    containerCard.appendChild(createSongButton());
+    containerCard.appendChild(createPlayer(nameBird));
 
     return containerCard;
 }
@@ -69,7 +80,7 @@ function createTitle(nameTitle) {
 
 function createImage(nameBird) {
     const elemImage = createElement('img');
-    const translateBird = TRANSLATE_NAME_BIRDS[nameBird];
+    const translateBird = TRANSLATE_NAME[nameBird];
 
     elemImage.className = 'cards-container__image';
     elemImage.src = './assets/img/' + translateBird + '/bird-' + translateBird + '.jpg';
@@ -117,7 +128,7 @@ function createSongButton() {
 
 function createAudio(nameBird) {
     const elemAudio = createElement('audio');
-    const translateBird = TRANSLATE_NAME_BIRDS[nameBird]
+    const translateBird = TRANSLATE_NAME[nameBird]
     
     elemAudio.src = './assets/audio/' + translateBird + '.mp3';
 
@@ -175,18 +186,36 @@ function changeActiveButton(currentButton, nameClassActiveButton) {
     }
 }
 
-function setMainImage(){
-    const cardContainer = document.querySelector('.cards-container');
+function createPlayer(nameSong){
+    const player = createElement('div');
+    player.className = 'cards-container__player'
 
-    cardContainer.appendChild();
+    player.appendChild(createAudio(nameSong))
+    player.appendChild(createSongButton());
+
+    return player;
 }
 
-function switchBackground(nameBird) {
+function switchBackground(nameBg) {
     const section = document.querySelector('.cards-container');
-    const translateBird = TRANSLATE_NAME_BIRDS[nameBird];
-    //console.log('section', `url(./assets/img/${translateBird})`);
+    const translateName = TRANSLATE_NAME[nameBg];
 
-    section.style.backgroundImage = `url(assets/img/${translateBird}/${translateBird}.jpg)`
+    section.style.backgroundImage = `url(assets/img/${translateName}/${translateName}.jpg)`;
 }
 
-export {createButtons, changeCard};
+function setMainPage () {
+    const cardContainer = document.querySelector('.cards-container');
+    const activeButton = document.querySelector('.button_pressed');
+    const nameSong = 'Лес';
+
+    if(activeButton) {
+        activeButton.classList.remove('button_pressed');
+    }
+
+    removeCard(cardContainer);
+    switchBackground(nameSong);
+
+    cardContainer.appendChild(createPlayer(nameSong));
+}
+
+export {createButtons, setMainPage};
