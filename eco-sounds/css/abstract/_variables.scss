@@ -1,0 +1,18 @@
+$color--main: #bdae82; 
+$color--white: #FFFFFF;
+$color--black: #000000;
+$font-IR: "InterRegular", sans-serif;
+$font-IB: "InterBold", sans-serif;
+$tablet: 940px;
+$desktop: 1440px;
+$mobile: 380px;
+
+@mixin size_block($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+@mixin font ($font, $size) {
+    font-family: $font;
+    font-size: $size;
+}

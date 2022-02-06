@@ -1,0 +1,21 @@
+.icon {
+    @include size_block(150px, 50px);
+    
+    fill: $color--white;
+    transition: 1s;
+
+    &:hover {
+        fill: $color--main;
+    }
+}
+
+.icon-button {
+    @include size_block(50px, 50px);
+
+    fill: $color--white;
+    transition: 1s;
+
+    &:hover {
+        fill: $color--main;
+    }
+}
