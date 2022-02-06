@@ -77,6 +77,10 @@
 .cads-container__description-text {
     margin: 5px 0;
 
+    @media (max-width: $tablet) {
+        text-align: center;
+    }
+
 }
 
 .show {

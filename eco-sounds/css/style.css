@@ -228,7 +228,7 @@ header {
           transform: scale(1.1);
 }
 
-@media (max-width: 380px) {
+@media (max-width: 420px) {
   .cards-container__card:hover {
     -webkit-transform: none;
             transform: none;
@@ -248,7 +248,7 @@ header {
           transform: scale(1.5);
 }
 
-@media (max-width: 380px) {
+@media (max-width: 420px) {
   .cards-container__image:hover {
     -webkit-transform: none;
             transform: none;
@@ -272,7 +272,7 @@ header {
   color: #FFFFFF;
 }
 
-@media (max-width: 380px) {
+@media (max-width: 420px) {
   .cards-container__description {
     text-align: center;
   }
@@ -285,7 +285,7 @@ header {
   color: #bdae82;
 }
 
-@media (max-width: 380px) {
+@media (max-width: 940px) {
   .cards-container__text {
     text-align: center;
   }
@@ -293,6 +293,12 @@ header {
 
 .cads-container__description-text {
   margin: 5px 0;
+}
+
+@media (max-width: 940px) {
+  .cads-container__description-text {
+    text-align: center;
+  }
 }
 
 .show {
