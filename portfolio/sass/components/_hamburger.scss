@@ -1,0 +1,49 @@
+.hamburger {
+  display: none;
+
+  .active {
+    
+    &:nth-child(2){
+      opacity: 0;
+    }
+
+    &:nth-child(1){
+      position: fixed;
+      transform: rotate(45deg);
+    }
+    
+    &:nth-child(3){
+      position: fixed;
+      transform: translateY(-13px) rotate(-45deg);
+    }
+  }
+
+  .hamburger__line {
+    @include size_block(50px, 3px);
+    
+    display: block;
+    margin: 10px auto;
+    background-color: $text-color--white;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .active-light {
+    background-color: $bg-color--black;
+  }
+
+  &:hover {
+
+    .hamburger__line {
+      background-color: $text-color--main;
+    }
+    
+    cursor: pointer;
+  }
+
+  @media (max-width: $tablet)  {
+    display: block;
+    position: relative;
+    z-index: 2;
+  }
+}  
+

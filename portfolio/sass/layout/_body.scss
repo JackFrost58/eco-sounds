@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+  
+html {
+    scroll-behavior: smooth;
+    cursor: pointer;
+}
+  
+body {
+    background-color: $bg-color--black;
+}
+
+.container {
+    @include font($font-IR, 20px, 20px);
+  
+    max-width: $desktop;
+    min-width: $mobile;
+    margin: 0 auto;
+    font-size: 20px;
+}
