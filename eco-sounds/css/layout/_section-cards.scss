@@ -69,17 +69,14 @@
     margin: 10px 0;
     color: $color--main;
 
-    @media (max-width: $desktop) {
+    @media (max-width: $tablet) {
         text-align: center;
     }
 }
 
 .cads-container__description-text {
     margin: 5px 0;
-    
-    @media (max-width: $desktop) {
-        text-align: center;
-    }
+
 }
 
 .show {
