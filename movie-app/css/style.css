@@ -1,5 +1,116 @@
+@font-face {
+  font-family: PoppinsRegular;
+  src: url(../assets/fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+  font-family: InterBold;
+  src: url(../assets/fonts/Inter-Bold.ttf);
+}
+
+.logo {
+  -webkit-transition: 1s;
+  transition: 1s;
+  cursor: pointer;
+}
+
+.logo:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.search-form__input {
+  font-family: "PoppinsRegular", sans-serif;
+  font-size: 1em;
+  padding: 15px;
+  border: 2px solid #bdae82;
+  border-radius: 50px;
+  background-color: transparent;
+  color: #bdae82;
+}
+
+.search-form__input:focus {
+  background-color: #22254b;
+}
+
+.search-form__input:focus-visible {
+  outline: transparent;
+}
+
+.search-form__input::-webkit-input-placeholder {
+  color: #bdae82;
+}
+
+.search-form__input:-ms-input-placeholder {
+  color: #bdae82;
+}
+
+.search-form__input::-ms-input-placeholder {
+  color: #bdae82;
+}
+
+.search-form__input::placeholder {
+  color: #bdae82;
+}
+
 body {
-  font-family: "InterRegular", sans-serif;
+  font-family: "PoppinsRegular", sans-serif;
   font-size: 20px;
+  margin: 0;
+  background-color: #22254b;
+}
+
+header {
+  width: 100%;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #373b69;
+}
+
+.header__title {
+  position: relative;
+  color: #0e3742;
+  margin: 5px 0;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.header__title span {
+  -webkit-animation: animate 5s linear infinite;
+          animation: animate 5s linear infinite;
+}
+
+.header__title span:nth-child(even) {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+
+@-webkit-keyframes animate {
+  0%, 18%, 20%, 50.1%, 60%, 65.1%, 80%, 90.1%, 92% {
+    color: #0e3742;
+    text-shadow: none;
+  }
+  18.1%, 20.1%, 30%, 50%, 60.1%, 65%, 80.1%, 90%, 92.1%, 100% {
+    color: #ffffff;
+    text-shadow: 0 0 10px #bdae82, 0 0 20px #bdae82;
+  }
+}
+
+@keyframes animate {
+  0%, 18%, 20%, 50.1%, 60%, 65.1%, 80%, 90.1%, 92% {
+    color: #0e3742;
+    text-shadow: none;
+  }
+  18.1%, 20.1%, 30%, 50%, 60.1%, 65%, 80.1%, 90%, 92.1%, 100% {
+    color: #ffffff;
+    text-shadow: 0 0 10px #bdae82, 0 0 20px #bdae82;
+  }
 }
 /*# sourceMappingURL=style.css.map */

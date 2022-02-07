@@ -1,8 +1,12 @@
 $desktop: 1440px;
 $tablet: 780px;
 $mobile: 390px;
-$font-IR: "InterRegular", sans-serif;
+$font-PR: "PoppinsRegular", sans-serif;
 $font-IB: "InterBold", sans-serif;
+$color--primary: #22254b;
+$color--secondary: #373b69;
+$color--gold: #bdae82;
+$color--white: #ffffff;
 
 @mixin size_block($width, $height) {
     width: $width;

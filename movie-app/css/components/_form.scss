@@ -1,0 +1,21 @@
+.search-form__input {
+    @include font($font-PR, 1em);
+
+    padding: 15px;
+    border: 2px solid $color--gold;
+    border-radius: 50px;
+    background-color: transparent;
+    color: $color--gold;
+
+    &:focus {
+        background-color: $color--primary;
+    }
+
+    &:focus-visible {
+        outline: transparent;
+    }
+
+    &::placeholder {
+        color: $color--gold;
+    }
+}

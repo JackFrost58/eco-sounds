@@ -1,3 +1,6 @@
 body {
-    @include font($font-IR, 20px);
+    @include font($font-PR, 20px);
+
+    margin: 0;
+    background-color: $color--primary;
 }
