@@ -1,0 +1,15 @@
+$desktop: 1440px;
+$tablet: 780px;
+$mobile: 390px;
+$font-IR: "InterRegular", sans-serif;
+$font-IB: "InterBold", sans-serif;
+
+@mixin size_block($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+@mixin font ($font, $size) {
+    font-family: $font;
+    font-size: $size;
+}

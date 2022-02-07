@@ -1,0 +1,13 @@
+{
+    "version": 3,
+    "mappings": "AEAA,AAAA,IAAI,CAAC;EDYD,WAAW,EATL,cAAc,EAAE,UAAU;EAUhC,SAAS,ECZe,IAAI;CAC/B",
+    "sources": [
+        "style.scss",
+        "abstract/_variables.scss",
+        "layout/_body.scss",
+        "layout/_header.scss",
+        "layout/_footer.scss"
+    ],
+    "names": [],
+    "file": "style.css"
+}
