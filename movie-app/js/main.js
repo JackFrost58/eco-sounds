@@ -1,21 +1,10 @@
-function createCard() {
+import { getData } from "./api.js";
+import { createCards, getSearchWord } from "./helper.js";
 
-}
+const { results } = await getData('transformers');
 
-function createElement(nameElement) {
-    const element = document.createElement(nameElement);
+//const form = document.getElementById('search-form');
 
-    return element;
-}
+//form.addEventListener('submit', createCard);
 
-function createInfo() {
-
-}
-
-function createImage() {
-
-}
-
-function createOverview() {
-    
-}
+createCards(results);

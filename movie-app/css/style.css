@@ -146,7 +146,6 @@ header {
 
 .cards-container__card {
   width: 300px;
-  height: 100%;
   position: relative;
   margin: 10px;
   border-radius: 5px;
@@ -164,6 +163,7 @@ header {
 
 .cards-container__card-img {
   width: 100%;
+  height: 450px;
 }
 
 .cards-container__card-info {
@@ -177,6 +177,9 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding: 15px;
 }
 
