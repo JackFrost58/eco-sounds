@@ -17,3 +17,18 @@
         filter: drop-shadow(0 0 2px $color--gold); 
     }
 }
+
+.link {
+    @include size_block(50px, 50px);
+
+    fill: $color--gold;
+
+    &:hover {
+        fill: $color--white;
+        filter: drop-shadow(0 0 2px $color--gold); 
+    }
+}
+
+.link_size {
+    @include size_block(100px, 50px);
+}
