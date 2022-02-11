@@ -23,10 +23,12 @@ function createCard(object) {
     const title = object.title;
     const overview = object.overview;
     const mark = object.vote_average;
+    const data = object.release_date
 
     const card = createElement('div');
     card.className = 'cards-container__card';
 
+    card.appendChild(createData(data));
     card.appendChild(createImage(image, title))
     card.appendChild(createInfo(title, mark))
     card.appendChild(createOverview(overview))
@@ -94,10 +96,13 @@ function createOverview(text) {
     return blockOverview;
 }
 
-function clearInput(){
-    const input = document.querySelector('search-form__input');
-    
-    input.value = '';
+function createData(data) {
+    const divElement = createElement('div');
+    const year = data.slice(0,4);
+    divElement.className = 'cards-container__card-year';
+    divElement.innerHTML = year;
+
+    return divElement;
 }
 
 function createButtons() {
@@ -117,4 +122,4 @@ function createButtons() {
     
 }
 
-export { createCards, createButtons, clearInput } 
+export { createCards, createButtons } 

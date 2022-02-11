@@ -1,5 +1,5 @@
 import { getMovies } from "./api.js";
-import { clearInput, createButtons } from "./helper.js";
+import { createButtons } from "./helper.js";
 import { POPULAR_MOVIE, SEARCH_API } from "./variables.js";
 
 
