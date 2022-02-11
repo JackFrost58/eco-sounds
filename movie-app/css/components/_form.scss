@@ -1,7 +1,14 @@
+.search-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
 .search-form__input {
     @include font($font-PR, 1em);
 
-    padding: 15px;
+    padding: 15px 50px 15px 15px;
     border: 2px solid $color--gold;
     border-radius: 50px;
     background-color: transparent;
@@ -18,4 +25,12 @@
     &::placeholder {
         color: $color--gold;
     }
+}
+
+.search-form__button-remove{
+    position: absolute;
+    right: 20px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
 }

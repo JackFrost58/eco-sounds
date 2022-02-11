@@ -1,0 +1,48 @@
+.section-recently{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px;
+}
+
+.section-recently__title{
+    display: flex;
+    justify-content: center;
+}
+
+.section-recently__title-text {
+    position: relative;
+    color: #0e3742;
+    margin: 5px 0;
+    text-transform: uppercase;
+    text-align: center; 
+
+    span {
+        color: $color--white;
+        text-shadow: 0 0 10px $color--gold,
+        0 0 20px $color--gold
+    }
+}
+
+.buttons-wrapper{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.buttons-wrapper__button{
+    @include font($font-PR, 1em);
+
+    padding: 15px;
+    margin: 5px;
+    border: 2px solid $color--gold;
+    border-radius: 50px;
+    background-color: transparent;
+    color: $color--gold;
+    cursor: pointer;
+
+    &:hover {
+        color: $color--white;
+        box-shadow: 0 0 10px $color--gold;
+    }
+}

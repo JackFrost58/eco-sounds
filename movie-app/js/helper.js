@@ -1,31 +1,33 @@
-import { NAME_CLASSES, NAME_ELEMENTS } from "./variables.js";
+import { getMovies } from "./api.js";
+import { IMAGE_URL, NAME_CLASSES, NAME_ELEMENTS, NAME_POPULAR_FILMS, SEARCH_API } from "./variables.js";
 
-function createCards(array) {
+function createCards(results){
     const cardContainer = document.querySelector('.cards-container');
    
-    for (let i = 0; i < array.length; i++){
-        cardContainer.appendChild(createCard(array[i]));
+    cardContainer.innerHTML = '';
+    
+    for (let i = 0; i < results.length; i++){
+        cardContainer.appendChild(createCard(results[i]));
     }
 }
 
-
 function createCard(object) {
-    let urlImage = 0;
+    let image = 0;
 
     if(object.poster_path !== null) {
-        urlImage = 'https://image.tmdb.org/t/p/w1280' + object.poster_path;
+        image = IMAGE_URL + object.poster_path;
     } else {
-        urlImage = './assets/image/no-image.jpg'
+        image = './assets/image/no-image.jpg'
     }
     
-    const title = object.original_title;
+    const title = object.title;
     const overview = object.overview;
     const mark = object.vote_average;
 
     const card = createElement('div');
     card.className = 'cards-container__card';
 
-    card.appendChild(createImage(urlImage, title))
+    card.appendChild(createImage(image, title))
     card.appendChild(createInfo(title, mark))
     card.appendChild(createOverview(overview))
 
@@ -92,11 +94,27 @@ function createOverview(text) {
     return blockOverview;
 }
 
-function getSearchWord() {
-    const searchInput = document.querySelector('.search-form__input');
-    const searchMovie = searchInput.value; 
-
-    return searchMovie;
+function clearInput(){
+    const input = document.querySelector('search-form__input');
+    
+    input.value = '';
 }
 
-export { getSearchWord, createCards } 
+function createButtons() {
+    const wrapper = document.querySelector('.buttons-wrapper');
+
+    NAME_POPULAR_FILMS.forEach((element) => {
+        const buttonElement = createElement('button');
+        buttonElement.className = 'buttons-wrapper__button';
+        buttonElement.innerHTML = element;
+
+        buttonElement.addEventListener('click', ()=>{
+            getMovies(SEARCH_API + element)
+        });
+        wrapper.appendChild(buttonElement);
+    })
+    
+    
+}
+
+export { createCards, createButtons, clearInput } 

@@ -1,10 +1,11 @@
-async function getData(searchWord) {
-    const API_KEY = '3fd2be6f0c70a2a598f084ddfb75487c';
-    const url = `https://api.themoviedb.org/3/search/movie?api_key=${API_KEY}&query=${searchWord}`
+import { createCards } from "./helper.js";
+
+async function getMovies(url) {
     const res = await fetch(url);
     const data = await res.json();
+    const results = data.results;
     
-    return data
+    createCards(results);
 }
 
-export {getData};
+export {getMovies}

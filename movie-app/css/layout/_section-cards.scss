@@ -62,25 +62,6 @@
     color: red  ;
 }
 
-.section-card__title{
-    display: flex;
-    justify-content: center;
-}
-
-.section-card__title-text {
-    position: relative;
-    color: #0e3742;
-    margin: 5px 0;
-    text-transform: uppercase;
-    text-align: center; 
-
-    span {
-        color: $color--white;
-        text-shadow: 0 0 10px $color--gold,
-        0 0 20px $color--gold
-    }
-}
-
 .cards-container__card-overview {
     background-color: #fff;
     padding: 2rem;

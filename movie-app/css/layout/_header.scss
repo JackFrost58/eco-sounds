@@ -15,26 +15,24 @@ header {
     text-align: center; 
 
     span {
-        animation: animate 5s linear infinite;
+      animation: pulse-gold 2s ease-in-out infinite alternate;
+      color: #ffffff;
+    }
 
-        &:nth-child(even) {
-            animation-delay: 0.4s;
-        }
+    @media (max-width: $tablet) {
+        display: none;
     }
 }
 
-@keyframes animate {
-
-    0%,18%,20%,50.1%,60%,65.1%,80%,90.1%,92%
-    {
-        color: #0e3742;
-        text-shadow: none;
+@keyframes pulse-gold {
+    0% {
+      transform: scale(0.95);
+      text-shadow: 0 0 0px $color--gold;              
     }
-
-    18.1%,20.1%,30%,50%,60.1%,65%,80.1%,90%,92.1%,100% 
-    {
-        color: #ffffff;
-        text-shadow: 0 0 10px $color--gold,
-        0 0 20px $color--gold
+    
+    100% {
+      transform: scale(1);
+      
+      text-shadow: 0 0 50px $color--gold;
     }
-}
+  }

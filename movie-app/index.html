@@ -16,18 +16,26 @@
             <span>For</span>
             <span>All</span>
         </h1>
-        <form id="search-form">
-            <input type="text" placeholder="Search movie" class="search-form__input">
+        <form class="search-form" id="search-form">
+            <input type="text" placeholder="Search movie" class="search-form__input" autofocus>
+            <button class="search-form__button-remove">
+                <svg class="icon">
+                    <use xlink:href="./assets/svg/sprite.svg#cross"></use>
+                </svg>
+            </button>
         </form>
     </header>
     <main>
-        <section class="section-card">
-            <div class="section-card__title">
-                <h2 class="section-card__title-text">
-                    <span>Most</span>
-                    <span>Popular</span>
+        <section class="section-recently">
+            <div class="section-recently__title">
+                <h2 class="section-recently__title-text">
+                    <span>Searched </span>
+                    <span>recently</span>
                 </h2>
             </div>
+            <div class="buttons-wrapper"></div>
+        </section>
+        <section class="section-card">
             <div class="cards-container">
             </div>
         </section>
