@@ -7,4 +7,19 @@ body {
 
     margin: 0;
     background-color: $color--primary;
+
+    &::-webkit-scrollbar {
+        width: 5px;
+        background-color: $color--primary;
+    }
+      
+    &::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        background-color: $color--gold;
+    }
+      
+    &::-webkit-scrollbar-track {
+        border-radius: 10px;
+        background-color: $color--primary;
+    }
 }

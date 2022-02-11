@@ -115,6 +115,21 @@ body {
   background-color: #1d2733;
 }
 
+body::-webkit-scrollbar {
+  width: 5px;
+  background-color: #1d2733;
+}
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #bdae82;
+}
+
+body::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: #1d2733;
+}
+
 header {
   width: 100%;
   height: 100px;
